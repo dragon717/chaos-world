@@ -1,0 +1,136 @@
+{
+  "Version": "1.0.0",
+  "LastModified": "2024-01-01T00:00:00Z",
+  "Language": "zh-CN",
+  "LanguageName": "简体中文",
+  "Translations": {
+    "UI": {
+      "MainMenu": "主菜单",
+      "NewGame": "新游戏",
+      "LoadGame": "读取游戏",
+      "SaveGame": "保存游戏",
+      "Settings": "设置",
+      "Exit": "退出",
+      "Confirm": "确认",
+      "Cancel": "取消",
+      "Back": "返回",
+      "Next": "下一步",
+      "Previous": "上一步",
+      "Close": "关闭",
+      "Help": "帮助"
+    },
+    "Character": {
+      "Name": "姓名",
+      "Age": "年龄",
+      "Gender": "性别",
+      "Male": "男",
+      "Female": "女",
+      "Attributes": "属性",
+      "Strength": "力量",
+      "Agility": "敏捷",
+      "Intelligence": "智力",
+      "Wisdom": "智慧",
+      "Charisma": "魅力",
+      "Constitution": "体质",
+      "Health": "生命值",
+      "Energy": "精力值",
+      "Experience": "经验值",
+      "Level": "等级"
+    },
+    "Cultivation": {
+      "Realm": "境界",
+      "Virtue": "德行",
+      "Knowledge": "学识",
+      "Meditation": "冥想",
+      "Primitive": "原始境",
+      "Existence": "存乎境",
+      "Mastery": "精通境",
+      "Transcendence": "超越境",
+      "Sage": "圣贤境",
+      "Benevolence": "仁",
+      "Righteousness": "义",
+      "Propriety": "礼",
+      "WisdomVirtue": "智",
+      "Trustworthiness": "信"
+    },
+    "Regions": {
+      "CentralPlains": "中原农桑之地",
+      "EasternIslands": "东海诸岛渔盐之乡",
+      "NorthernSteppes": "北疆游牧部族",
+      "SouthernJungles": "南蛮丛林秘境",
+      "WesternDeserts": "西域商贾通衢"
+    },
+    "Items": {
+      "Category": "类别",
+      "Quality": "品质",
+      "Rarity": "稀有度",
+      "Weight": "重量",
+      "Price": "价格",
+      "Durability": "耐久度",
+      "Poor": "粗制品",
+      "Common": "普通品",
+      "Fine": "精良品",
+      "Superior": "上等品",
+      "Masterwork": "大师品",
+      "Legendary": "传奇品",
+      "Mythical": "神话品"
+    },
+    "Skills": {
+      "Farming": "农业",
+      "Crafting": "手工艺",
+      "Combat": "战斗",
+      "Social": "社交",
+      "Learning": "学习",
+      "Trading": "贸易",
+      "Medicine": "医术",
+      "Music": "音乐",
+      "Poetry": "诗词",
+      "Calligraphy": "书法"
+    },
+    "Seasons": {
+      "Spring": "春季",
+      "Summer": "夏季",
+      "Autumn": "秋季",
+      "Winter": "冬季"
+    },
+    "Weather": {
+      "Sunny": "晴朗",
+      "Cloudy": "多云",
+      "Rainy": "下雨",
+      "Stormy": "暴风雨",
+      "Snowy": "下雪",
+      "Foggy": "有雾"
+    },
+    "Social": {
+      "Reputation": "声望",
+      "Influence": "影响力",
+      "Relationship": "关系",
+      "Friend": "朋友",
+      "Enemy": "敌人",
+      "Neutral": "中立",
+      "Ally": "盟友",
+      "Rival": "对手"
+    },
+    "Economy": {
+      "Money": "金钱",
+      "Trade": "贸易",
+      "Market": "市场",
+      "Buy": "购买",
+      "Sell": "出售",
+      "Profit": "利润",
+      "Loss": "亏损",
+      "Investment": "投资"
+    },
+    "Messages": {
+      "GameSaved": "游戏已保存",
+      "GameLoaded": "游戏已读取",
+      "LevelUp": "等级提升！",
+      "SkillImproved": "技能提升！",
+      "RealmAdvanced": "境界突破！",
+      "QuestCompleted": "任务完成！",
+      "ItemObtained": "获得物品",
+      "MoneyEarned": "获得金钱",
+      "ReputationGained": "声望提升"
+    }
+  }
+}

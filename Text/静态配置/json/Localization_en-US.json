@@ -1,0 +1,136 @@
+{
+  "Version": "1.0.0",
+  "LastModified": "2024-01-01T00:00:00Z",
+  "Language": "en-US",
+  "LanguageName": "English (US)",
+  "Translations": {
+    "UI": {
+      "MainMenu": "Main Menu",
+      "NewGame": "New Game",
+      "LoadGame": "Load Game",
+      "SaveGame": "Save Game",
+      "Settings": "Settings",
+      "Exit": "Exit",
+      "Confirm": "Confirm",
+      "Cancel": "Cancel",
+      "Back": "Back",
+      "Next": "Next",
+      "Previous": "Previous",
+      "Close": "Close",
+      "Help": "Help"
+    },
+    "Character": {
+      "Name": "Name",
+      "Age": "Age",
+      "Gender": "Gender",
+      "Male": "Male",
+      "Female": "Female",
+      "Attributes": "Attributes",
+      "Strength": "Strength",
+      "Agility": "Agility",
+      "Intelligence": "Intelligence",
+      "Wisdom": "Wisdom",
+      "Charisma": "Charisma",
+      "Constitution": "Constitution",
+      "Health": "Health",
+      "Energy": "Energy",
+      "Experience": "Experience",
+      "Level": "Level"
+    },
+    "Cultivation": {
+      "Realm": "Realm",
+      "Virtue": "Virtue",
+      "Knowledge": "Knowledge",
+      "Meditation": "Meditation",
+      "Primitive": "Primitive Realm",
+      "Existence": "Existence Realm",
+      "Mastery": "Mastery Realm",
+      "Transcendence": "Transcendence Realm",
+      "Sage": "Sage Realm",
+      "Benevolence": "Benevolence",
+      "Righteousness": "Righteousness",
+      "Propriety": "Propriety",
+      "WisdomVirtue": "Wisdom",
+      "Trustworthiness": "Trustworthiness"
+    },
+    "Regions": {
+      "CentralPlains": "Central Agricultural Plains",
+      "EasternIslands": "Eastern Fishing Islands",
+      "NorthernSteppes": "Northern Nomadic Steppes",
+      "SouthernJungles": "Southern Jungle Mysteries",
+      "WesternDeserts": "Western Trading Deserts"
+    },
+    "Items": {
+      "Category": "Category",
+      "Quality": "Quality",
+      "Rarity": "Rarity",
+      "Weight": "Weight",
+      "Price": "Price",
+      "Durability": "Durability",
+      "Poor": "Poor",
+      "Common": "Common",
+      "Fine": "Fine",
+      "Superior": "Superior",
+      "Masterwork": "Masterwork",
+      "Legendary": "Legendary",
+      "Mythical": "Mythical"
+    },
+    "Skills": {
+      "Farming": "Farming",
+      "Crafting": "Crafting",
+      "Combat": "Combat",
+      "Social": "Social",
+      "Learning": "Learning",
+      "Trading": "Trading",
+      "Medicine": "Medicine",
+      "Music": "Music",
+      "Poetry": "Poetry",
+      "Calligraphy": "Calligraphy"
+    },
+    "Seasons": {
+      "Spring": "Spring",
+      "Summer": "Summer",
+      "Autumn": "Autumn",
+      "Winter": "Winter"
+    },
+    "Weather": {
+      "Sunny": "Sunny",
+      "Cloudy": "Cloudy",
+      "Rainy": "Rainy",
+      "Stormy": "Stormy",
+      "Snowy": "Snowy",
+      "Foggy": "Foggy"
+    },
+    "Social": {
+      "Reputation": "Reputation",
+      "Influence": "Influence",
+      "Relationship": "Relationship",
+      "Friend": "Friend",
+      "Enemy": "Enemy",
+      "Neutral": "Neutral",
+      "Ally": "Ally",
+      "Rival": "Rival"
+    },
+    "Economy": {
+      "Money": "Money",
+      "Trade": "Trade",
+      "Market": "Market",
+      "Buy": "Buy",
+      "Sell": "Sell",
+      "Profit": "Profit",
+      "Loss": "Loss",
+      "Investment": "Investment"
+    },
+    "Messages": {
+      "GameSaved": "Game Saved",
+      "GameLoaded": "Game Loaded",
+      "LevelUp": "Level Up!",
+      "SkillImproved": "Skill Improved!",
+      "RealmAdvanced": "Realm Advanced!",
+      "QuestCompleted": "Quest Completed!",
+      "ItemObtained": "Item Obtained",
+      "MoneyEarned": "Money Earned",
+      "ReputationGained": "Reputation Gained"
+    }
+  }
+}

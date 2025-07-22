@@ -1,0 +1,173 @@
+{
+  "Version": "1.0.0",
+  "LastModified": "2024-01-01T00:00:00Z",
+  "Equipment": [
+    {
+      "EquipmentID": "IronSword",
+      "Name": "铁剑",
+      "DisplayName": "铁剑",
+      "Description": "普通的铁制长剑，锋利耐用",
+      "Category": "Weapon",
+      "SubCategory": "Sword",
+      "Quality": {
+        "Base": "Common",
+        "Possible": ["Poor", "Common", "Fine", "Superior"]
+      },
+      "Rarity": "Common",
+      "Properties": {
+        "Weight": 2.5,
+        "Durability": 100,
+        "BasePrice": 150,
+        "RequiredLevel": 5
+      },
+      "Stats": {
+        "Attack": 25,
+        "Accuracy": 85,
+        "CriticalChance": 0.05,
+        "Range": 1.2
+      },
+      "Requirements": {
+        "Strength": 15,
+        "Skills": {
+          "SwordMastery": 1
+        }
+      },
+      "Materials": [
+        {
+          "MaterialID": "IronIngot",
+          "Quantity": 3
+        },
+        {
+          "MaterialID": "WoodHandle",
+          "Quantity": 1
+        }
+      ],
+      "Enchantments": [],
+      "EquipSlot": "MainHand"
+    },
+    {
+      "EquipmentID": "SilkRobe",
+      "Name": "丝绸长袍",
+      "DisplayName": "丝绸长袍",
+      "Description": "华贵的丝绸制作的长袍，提升社交影响力",
+      "Category": "Armor",
+      "SubCategory": "Robe",
+      "Quality": {
+        "Base": "Fine",
+        "Possible": ["Common", "Fine", "Superior", "Masterwork"]
+      },
+      "Rarity": "Uncommon",
+      "Properties": {
+        "Weight": 1.0,
+        "Durability": 60,
+        "BasePrice": 300,
+        "RequiredLevel": 10
+      },
+      "Stats": {
+        "Defense": 5,
+        "SocialInfluence": 15,
+        "Comfort": 20,
+        "Prestige": 25
+      },
+      "Requirements": {
+        "Culture": 20,
+        "Skills": {
+          "Etiquette": 2
+        }
+      },
+      "Materials": [
+        {
+          "MaterialID": "SilkFabric",
+          "Quantity": 5
+        },
+        {
+          "MaterialID": "GoldThread",
+          "Quantity": 2
+        }
+      ],
+      "Enchantments": [
+        {
+          "Type": "Charisma",
+          "Value": 5
+        }
+      ],
+      "EquipSlot": "Chest"
+    },
+    {
+      "EquipmentID": "JadeAmulet",
+      "Name": "玉石护符",
+      "DisplayName": "玉石护符",
+      "Description": "精美的玉石护符，据说能带来好运和保护",
+      "Category": "Accessory",
+      "SubCategory": "Amulet",
+      "Quality": {
+        "Base": "Superior",
+        "Possible": ["Fine", "Superior", "Masterwork", "Legendary"]
+      },
+      "Rarity": "Rare",
+      "Properties": {
+        "Weight": 0.2,
+        "Durability": 200,
+        "BasePrice": 800,
+        "RequiredLevel": 15
+      },
+      "Stats": {
+        "Luck": 10,
+        "SpiritualPower": 15,
+        "MentalResistance": 20,
+        "CultivationBonus": 0.05
+      },
+      "Requirements": {
+        "Wisdom": 25,
+        "Skills": {
+          "Meditation": 3
+        }
+      },
+      "Materials": [
+        {
+          "MaterialID": "Jade",
+          "Quantity": 1
+        },
+        {
+          "MaterialID": "SilverWire",
+          "Quantity": 1
+        }
+      ],
+      "Enchantments": [
+        {
+          "Type": "Protection",
+          "Value": 10
+        },
+        {
+          "Type": "Wisdom",
+          "Value": 5
+        }
+      ],
+      "EquipSlot": "Neck"
+    }
+  ],
+  "EquipmentCategories": [
+    {
+      "CategoryID": "Weapon",
+      "Name": "武器",
+      "Description": "用于战斗的各种武器装备",
+      "SubCategories": ["Sword", "Bow", "Spear", "Axe", "Dagger"]
+    },
+    {
+      "CategoryID": "Armor",
+      "Name": "护甲",
+      "Description": "提供防护的各种装甲",
+      "SubCategories": ["Helmet", "Chest", "Legs", "Boots", "Gloves", "Robe"]
+    },
+    {
+      "CategoryID": "Accessory",
+      "Name": "饰品",
+      "Description": "提供特殊效果的装饰品",
+      "SubCategories": ["Ring", "Amulet", "Bracelet", "Earring"]
+    }
+  ],
+  "EquipSlots": [
+    "Head", "Neck", "Chest", "MainHand", "OffHand", 
+    "Legs", "Feet", "Hands", "Ring1", "Ring2"
+  ]
+}

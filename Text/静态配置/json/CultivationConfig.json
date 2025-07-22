@@ -1,0 +1,406 @@
+{
+  "Version": "1.0.0",
+  "LastModified": "2024-01-01T00:00:00Z",
+  "CultivationSystem": {
+    "Realms": [
+      {
+        "RealmID": "Primitive",
+        "Name": "原始境",
+        "DisplayName": "原始境",
+        "Description": "修身的起始阶段，开始认识自我和世界",
+        "Level": 1,
+        "LevelRange": {
+          "Min": 1,
+          "Max": 10
+        },
+        "Stages": [
+          {
+            "StageID": "Early",
+            "Name": "初期",
+            "LevelRange": {"Min": 1, "Max": 3},
+            "Description": "野性本能，求生为主"
+          },
+          {
+            "StageID": "Middle",
+            "Name": "中期",
+            "LevelRange": {"Min": 4, "Max": 6},
+            "Description": "初识善恶，朦胧觉醒"
+          },
+          {
+            "StageID": "Late",
+            "Name": "后期",
+            "LevelRange": {"Min": 7, "Max": 9},
+            "Description": "基础认知，简单道德"
+          },
+          {
+            "StageID": "Perfect",
+            "Name": "圆满",
+            "LevelRange": {"Min": 10, "Max": 10},
+            "Description": "本能完善，准备觉悟"
+          }
+        ],
+        "Requirements": {
+          "Virtue": 0,
+          "Knowledge": 0,
+          "Experience": 0,
+          "Age": 16,
+          "Wisdom": 0
+        },
+        "Bonuses": {
+          "VirtueGain": 1.05,
+          "LearningSpeed": 1.10,
+          "Focus": 1.05,
+          "Lifespan": 2,
+          "Perception": 1.05
+        },
+        "Abilities": [
+          "BasicMeditation",
+          "SimpleReflection",
+          "MoralAwareness"
+        ],
+        "MaxAttributes": {
+          "Strength": 20,
+          "Intelligence": 20,
+          "Wisdom": 20,
+          "Charisma": 20
+        }
+      },
+      {
+        "RealmID": "Existence",
+        "Name": "存乎境",
+        "DisplayName": "存乎境",
+        "Description": "理解存在的意义，开始掌握内在力量",
+        "Level": 2,
+        "LevelRange": {
+          "Min": 11,
+          "Max": 20
+        },
+        "Stages": [
+          {
+            "StageID": "Early",
+            "Name": "初期",
+            "LevelRange": {"Min": 11, "Max": 13},
+            "Description": "道德萌芽，是非初辨"
+          },
+          {
+            "StageID": "Middle",
+            "Name": "中期",
+            "LevelRange": {"Min": 14, "Max": 16},
+            "Description": "品德养成，行为规范"
+          },
+          {
+            "StageID": "Late",
+            "Name": "后期",
+            "LevelRange": {"Min": 17, "Max": 19},
+            "Description": "德行稳固，善念坚定"
+          },
+          {
+            "StageID": "Perfect",
+            "Name": "圆满",
+            "LevelRange": {"Min": 20, "Max": 20},
+            "Description": "道德圆满，品格高尚"
+          }
+        ],
+        "Requirements": {
+          "Virtue": 100,
+          "Knowledge": 50,
+          "Experience": 1000,
+          "Age": 20,
+          "Wisdom": 25
+        },
+        "Bonuses": {
+          "VirtueGain": 1.10,
+          "LearningSpeed": 1.20,
+          "Focus": 1.15,
+          "Lifespan": 5,
+          "Perception": 1.15
+        },
+        "Abilities": [
+          "EnhancedMeditation",
+          "MoralInsight",
+          "InnerStrength",
+          "WisdomGuidance",
+          "VirtueGuidance"
+        ],
+        "MaxAttributes": {
+          "Strength": 25,
+          "Intelligence": 25,
+          "Wisdom": 25,
+          "Charisma": 25
+        }
+      },
+      {
+        "RealmID": "Mastery",
+        "Name": "纵横境",
+        "DisplayName": "纵横境",
+        "Description": "智慧开启，纵横天下",
+        "Level": 3,
+        "LevelRange": {
+          "Min": 21,
+          "Max": 30
+        },
+        "Stages": [
+          {
+            "StageID": "Early",
+            "Name": "初期",
+            "LevelRange": {"Min": 21, "Max": 23},
+            "Description": "智慧初显，见识渐广"
+          },
+          {
+            "StageID": "Middle",
+            "Name": "中期",
+            "LevelRange": {"Min": 24, "Max": 26},
+            "Description": "学识深厚，才能出众"
+          },
+          {
+            "StageID": "Late",
+            "Name": "后期",
+            "LevelRange": {"Min": 27, "Max": 29},
+            "Description": "智慧通达，纵横捭阖"
+          },
+          {
+            "StageID": "Perfect",
+            "Name": "圆满",
+            "LevelRange": {"Min": 30, "Max": 30},
+            "Description": "智慧圆满，运筹帷幄"
+          }
+        ],
+        "Requirements": {
+          "Virtue": 300,
+          "Knowledge": 200,
+          "Experience": 5000,
+          "Age": 30,
+          "Wisdom": 100
+        },
+        "Bonuses": {
+          "VirtueGain": 1.15,
+          "LearningSpeed": 1.35,
+          "Focus": 1.25,
+          "Lifespan": 10,
+          "Perception": 1.30
+        },
+        "Abilities": [
+          "AdvancedMeditation",
+          "WisdomInsight",
+          "StrategicThinking",
+          "KnowledgeIntegration",
+          "TeachingAbility",
+          "LeadershipAura"
+        ],
+        "MaxAttributes": {
+          "Strength": 35,
+          "Intelligence": 35,
+          "Wisdom": 35,
+          "Charisma": 35
+        }
+      },
+      {
+        "RealmID": "Transcendence",
+        "Name": "超越境",
+        "DisplayName": "超越境",
+        "Description": "超凡脱俗，德才兼备",
+        "Level": 4,
+        "LevelRange": {
+          "Min": 31,
+          "Max": 40
+        },
+        "Stages": [
+          {
+            "StageID": "Early",
+            "Name": "初期",
+            "LevelRange": {"Min": 31, "Max": 33},
+            "Description": "超越凡俗，品格卓越"
+          },
+          {
+            "StageID": "Middle",
+            "Name": "中期",
+            "LevelRange": {"Min": 34, "Max": 36},
+            "Description": "德才并重，影响深远"
+          },
+          {
+            "StageID": "Late",
+            "Name": "后期",
+            "LevelRange": {"Min": 37, "Max": 39},
+            "Description": "超凡入圣，德被天下"
+          },
+          {
+            "StageID": "Perfect",
+            "Name": "圆满",
+            "LevelRange": {"Min": 40, "Max": 40},
+            "Description": "超越完美，准备成圣"
+          }
+        ],
+        "Requirements": {
+          "Virtue": 800,
+          "Knowledge": 600,
+          "Experience": 15000,
+          "Age": 50,
+          "Wisdom": 300
+        },
+        "Bonuses": {
+          "VirtueGain": 1.25,
+          "LearningSpeed": 1.50,
+          "Focus": 1.40,
+          "Lifespan": 20,
+          "Perception": 1.50
+        },
+        "Abilities": [
+          "TranscendentMeditation",
+          "DivineInsight",
+          "MoralLeadership",
+          "WisdomTeaching",
+          "SpiritualGuidance",
+          "InfluentialPresence",
+          "NaturalHarmony"
+        ],
+        "MaxAttributes": {
+          "Strength": 50,
+          "Intelligence": 50,
+          "Wisdom": 50,
+          "Charisma": 50
+        }
+      },
+      {
+        "RealmID": "Sage",
+        "Name": "至圣境",
+        "DisplayName": "至圣境",
+        "Description": "圣人境界，德配天地",
+        "Level": 5,
+        "LevelRange": {
+          "Min": 41,
+          "Max": 50
+        },
+        "Stages": [
+          {
+            "StageID": "Early",
+            "Name": "初期",
+            "LevelRange": {"Min": 41, "Max": 43},
+            "Description": "圣德初成，教化万民"
+          },
+          {
+            "StageID": "Middle",
+            "Name": "中期",
+            "LevelRange": {"Min": 44, "Max": 46},
+            "Description": "圣德广被，泽被苍生"
+          },
+          {
+            "StageID": "Late",
+            "Name": "后期",
+            "LevelRange": {"Min": 47, "Max": 49},
+            "Description": "圣德圆满，与天地合"
+          },
+          {
+            "StageID": "Perfect",
+            "Name": "圆满",
+            "LevelRange": {"Min": 50, "Max": 50},
+            "Description": "至圣完美，德配乾坤"
+          }
+        ],
+        "Requirements": {
+          "Virtue": 2000,
+          "Knowledge": 1500,
+          "Experience": 50000,
+          "Age": 70,
+          "Wisdom": 1000
+        },
+        "Bonuses": {
+          "VirtueGain": 1.50,
+          "LearningSpeed": 2.00,
+          "Focus": 1.75,
+          "Lifespan": 50,
+          "Perception": 2.00
+        },
+        "Abilities": [
+          "SageMeditation",
+          "DivineWisdom",
+          "UniversalCompassion",
+          "HeavenlyInsight",
+          "SacredTeaching",
+          "CharismaticLeadership",
+          "CosmicHarmony",
+          "TimelessInfluence"
+        ],
+        "MaxAttributes": {
+          "Strength": 75,
+          "Intelligence": 75,
+          "Wisdom": 75,
+          "Charisma": 75
+        }
+      }
+    ],
+    "BreakthroughRequirements": {
+      "LevelRequirement": "ReachPerfectStage",
+      "VirtueRequirement": "AccumulateVirtuePoints",
+      "GoodDeedsRequirement": "CompleteGoodDeeds",
+      "WisdomRequirement": "ReachWisdomThreshold",
+      "MeditationRequirement": "CompleteMeditationHours"
+    },
+    "VirtueCategories": [
+      {
+        "VirtueID": "Benevolence",
+        "CategoryID": "Benevolence",
+        "Name": "仁",
+        "Description": "仁爱之心，慈悲为怀",
+        "MaxLevel": 100,
+        "Actions": ["HelpOthers", "ShowCompassion", "ProtectWeak"]
+      },
+      {
+        "VirtueID": "Righteousness",
+        "CategoryID": "Righteousness",
+        "Name": "义",
+        "Description": "正义之道，公正无私",
+        "MaxLevel": 100,
+        "Actions": ["StandForJustice", "KeepPromises", "FightCorruption"]
+      },
+      {
+        "VirtueID": "Propriety",
+        "CategoryID": "Propriety",
+        "Name": "礼",
+        "Description": "礼仪之规，文明有序",
+        "MaxLevel": 100,
+        "Actions": ["FollowEtiquette", "RespectElders", "MaintainOrder"]
+      },
+      {
+        "VirtueID": "Wisdom",
+        "CategoryID": "Wisdom",
+        "Name": "智",
+        "Description": "智慧之光，明辨是非",
+        "MaxLevel": 100,
+        "Actions": ["SeekKnowledge", "MakeWiseDecisions", "TeachOthers"]
+      },
+      {
+        "VirtueID": "Trustworthiness",
+        "CategoryID": "Trustworthiness",
+        "Name": "信",
+        "Description": "诚信之本，言行一致",
+        "MaxLevel": 100,
+        "Actions": ["KeepWord", "BeHonest", "BuildTrust"]
+      }
+    ],
+    "MeditationTypes": [
+      {
+        "TypeID": "BasicMeditation",
+        "Name": "基础冥想",
+        "Description": "最基本的冥想方式",
+        "RequiredRealm": "Primitive",
+        "Effects": {
+          "VirtueGain": 1,
+          "FocusImprovement": 0.1,
+          "StressReduction": 0.2
+        }
+      },
+      {
+        "TypeID": "EnhancedMeditation",
+        "Name": "进阶冥想",
+        "Description": "更深层次的冥想练习",
+        "RequiredRealm": "Existence",
+        "Effects": {
+          "VirtueGain": 2,
+          "FocusImprovement": 0.2,
+          "StressReduction": 0.3,
+          "WisdomGain": 1
+        }
+      }
+    ]
+  }
+}

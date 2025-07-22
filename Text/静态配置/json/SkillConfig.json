@@ -1,0 +1,1071 @@
+{
+  "Version": "1.0.0",
+  "LastModified": "2024-01-01T00:00:00Z",
+  "Description": "神州大地技能配置 - 融合传统武学与工业萌芽时代的技能体系",
+  "WorldSetting": "架空明朝，火铳与百工并举的变革之世",
+  "SkillCategories": [
+    {
+      "CategoryID": "Production",
+      "Name": "生产技能",
+      "DisplayName": "生产技能",
+      "Description": "农业、渔业、工艺制造等生产相关技能",
+      "Skills": [
+        {
+          "SkillID": "Farming",
+          "Name": "农业",
+          "DisplayName": "农业",
+          "Description": "种植作物和管理农田的技能",
+          "Category": "Production",
+          "SubCategory": "Agriculture",
+          "MaxLevel": 10,
+          "BaseExperience": 100,
+          "ExperienceMultiplier": 1.5,
+          "Attributes": {
+            "PrimaryAttribute": "Intelligence",
+            "SecondaryAttributes": ["Strength", "Endurance"]
+          },
+          "Prerequisites": [],
+          "Tools": ["Hoe", "Sickle", "Plow", "WateringCan"],
+          "Levels": [
+            {
+              "Level": 1,
+              "Name": "新手农夫",
+              "RequiredExperience": 0,
+              "Benefits": {
+                "CropYield": 1.0,
+                "PlantingSpeed": 1.0,
+                "SeedSurvivalRate": 0.7
+              },
+              "UnlockedActions": ["PlantBasicCrops", "WaterPlants", "HarvestCrops"]
+            },
+            {
+              "Level": 3,
+              "Name": "熟练农夫",
+              "RequiredExperience": 500,
+              "Benefits": {
+                "CropYield": 1.2,
+                "PlantingSpeed": 1.1,
+                "SeedSurvivalRate": 0.8
+              },
+              "UnlockedActions": ["PlantIntermediateCrops", "SoilImprovement", "PestControl"]
+            },
+            {
+              "Level": 5,
+              "Name": "专业农夫",
+              "RequiredExperience": 1500,
+              "Benefits": {
+                "CropYield": 1.4,
+                "PlantingSpeed": 1.2,
+                "SeedSurvivalRate": 0.9
+              },
+              "UnlockedActions": ["PlantAdvancedCrops", "CropRotation", "IrrigationSystem"]
+            },
+            {
+              "Level": 7,
+              "Name": "农业专家",
+              "RequiredExperience": 3500,
+              "Benefits": {
+                "CropYield": 1.6,
+                "PlantingSpeed": 1.3,
+                "SeedSurvivalRate": 0.95
+              },
+              "UnlockedActions": ["HybridBreeding", "AdvancedFertilizer", "WeatherPrediction"]
+            },
+            {
+              "Level": 10,
+              "Name": "农业大师",
+              "RequiredExperience": 8000,
+              "Benefits": {
+                "CropYield": 2.0,
+                "PlantingSpeed": 1.5,
+                "SeedSurvivalRate": 1.0
+              },
+              "UnlockedActions": ["MagicalAgriculture", "SeasonControl", "LandBlessing"]
+            }
+          ],
+          "RegionalBonuses": {
+            "CentralPlains": 0.3,
+            "RiverValleys": 0.2,
+            "WesternDeserts": -0.2,
+            "SouthernJungles": 0.1,
+            "NorthernSteppes": -0.1
+          }
+        },
+        {
+          "SkillID": "Fishing",
+          "Name": "渔业",
+          "DisplayName": "渔业",
+          "Description": "捕鱼和海洋资源获取的技能",
+          "Category": "Production",
+          "SubCategory": "Aquaculture",
+          "MaxLevel": 10,
+          "BaseExperience": 80,
+          "ExperienceMultiplier": 1.3,
+          "Attributes": {
+            "PrimaryAttribute": "Dexterity",
+            "SecondaryAttributes": ["Patience", "Perception"]
+          },
+          "Prerequisites": [],
+          "Tools": ["FishingRod", "Net", "Harpoon", "Boat"],
+          "Levels": [
+            {
+              "Level": 1,
+              "Name": "新手渔夫",
+              "RequiredExperience": 0,
+              "Benefits": {
+                "CatchRate": 0.6,
+                "FishQuality": 1.0,
+                "CatchSize": 1.0
+              },
+              "UnlockedActions": ["BasicFishing", "ShallowWaterFishing"]
+            },
+            {
+              "Level": 3,
+              "Name": "熟练渔夫",
+              "RequiredExperience": 400,
+              "Benefits": {
+                "CatchRate": 0.75,
+                "FishQuality": 1.1,
+                "CatchSize": 1.2
+              },
+              "UnlockedActions": ["NetFishing", "DeepWaterFishing", "FishPreservation"]
+            },
+            {
+              "Level": 5,
+              "Name": "专业渔夫",
+              "RequiredExperience": 1200,
+              "Benefits": {
+                "CatchRate": 0.85,
+                "FishQuality": 1.2,
+                "CatchSize": 1.4
+              },
+              "UnlockedActions": ["BigGameFishing", "UnderwaterHunting", "FishBreeding"]
+            },
+            {
+              "Level": 7,
+              "Name": "渔业专家",
+              "RequiredExperience": 2800,
+              "Benefits": {
+                "CatchRate": 0.92,
+                "FishQuality": 1.3,
+                "CatchSize": 1.6
+              },
+              "UnlockedActions": ["RareFishHunting", "SeaMonsterHunting", "TidalPrediction"]
+            },
+            {
+              "Level": 10,
+              "Name": "海洋大师",
+              "RequiredExperience": 6500,
+              "Benefits": {
+                "CatchRate": 1.0,
+                "FishQuality": 1.5,
+                "CatchSize": 2.0
+              },
+              "UnlockedActions": ["SeaSpiritsCommune", "WeatherControl", "LegendaryFishSummoning"]
+            }
+          ],
+          "RegionalBonuses": {
+            "EasternIslands": 0.4,
+            "RiverValleys": 0.2,
+            "WesternDeserts": -0.5,
+            "CentralPlains": 0.1,
+            "SouthernJungles": 0.15
+          }
+        },
+        {
+          "SkillID": "Crafting",
+          "Name": "工艺",
+          "DisplayName": "工艺",
+          "Description": "制作各种物品和工具的技能",
+          "Category": "Production",
+          "SubCategory": "Manufacturing",
+          "MaxLevel": 10,
+          "BaseExperience": 120,
+          "ExperienceMultiplier": 1.4,
+          "Attributes": {
+            "PrimaryAttribute": "Dexterity",
+            "SecondaryAttributes": ["Intelligence", "Creativity"]
+          },
+          "Prerequisites": [],
+          "Tools": ["Hammer", "Saw", "Chisel", "Anvil", "Forge"],
+          "Levels": [
+            {
+              "Level": 1,
+              "Name": "学徒工匠",
+              "RequiredExperience": 0,
+              "Benefits": {
+                "CraftingSpeed": 1.0,
+                "QualityChance": 0.1,
+                "MaterialEfficiency": 0.8
+              },
+              "UnlockedActions": ["BasicCrafting", "SimpleTools", "BasicWeapons"]
+            },
+            {
+              "Level": 3,
+              "Name": "熟练工匠",
+              "RequiredExperience": 600,
+              "Benefits": {
+                "CraftingSpeed": 1.2,
+                "QualityChance": 0.2,
+                "MaterialEfficiency": 0.85
+              },
+              "UnlockedActions": ["IntermediateCrafting", "ComplexTools", "Armor"]
+            },
+            {
+              "Level": 5,
+              "Name": "专业工匠",
+              "RequiredExperience": 1800,
+              "Benefits": {
+                "CraftingSpeed": 1.4,
+                "QualityChance": 0.3,
+                "MaterialEfficiency": 0.9
+              },
+              "UnlockedActions": ["AdvancedCrafting", "MasterworkItems", "Enchantment"]
+            },
+            {
+              "Level": 7,
+              "Name": "工艺专家",
+              "RequiredExperience": 4200,
+              "Benefits": {
+                "CraftingSpeed": 1.6,
+                "QualityChance": 0.4,
+                "MaterialEfficiency": 0.95
+              },
+              "UnlockedActions": ["LegendaryCrafting", "ArtifactCreation", "MaterialTransmutation"]
+            },
+            {
+              "Level": 10,
+              "Name": "工艺大师",
+              "RequiredExperience": 10000,
+              "Benefits": {
+                "CraftingSpeed": 2.0,
+                "QualityChance": 0.6,
+                "MaterialEfficiency": 1.0
+              },
+              "UnlockedActions": ["DivineForging", "SoulBinding", "CreationMagic"]
+            }
+          ],
+          "RegionalBonuses": {
+            "CentralPlains": 0.2,
+            "NorthernSteppes": 0.1,
+            "SouthernJungles": -0.1,
+            "EasternIslands": 0.05,
+            "WesternDeserts": 0.15
+          },
+          "CraftingBranches": [
+            "WeaponForging",
+            "ArmorCrafting",
+            "ToolMaking",
+            "Decoration",
+            "SpecialItems"
+          ]
+        },
+        {
+          "SkillID": "Blacksmithing",
+          "Name": "铁匠技能",
+          "DisplayName": "铁匠技能",
+          "Description": "锻造武器、防具、工具",
+          "Category": "Production",
+          "SubCategory": "Manufacturing",
+          "SkillType": "Crafting",
+          "MaxLevel": 100,
+          "LevelStages": [
+            {
+              "StageName": "学徒",
+              "LevelRange": {"Min": 1, "Max": 20},
+              "Description": "初学锻造，只能制作简单物品"
+            },
+            {
+              "StageName": "工匠",
+              "LevelRange": {"Min": 21, "Max": 40},
+              "Description": "技艺熟练，可制作常用物品"
+            },
+            {
+              "StageName": "师傅",
+              "LevelRange": {"Min": 41, "Max": 60},
+              "Description": "技艺精湛，可制作精品"
+            },
+            {
+              "StageName": "大师",
+              "LevelRange": {"Min": 61, "Max": 80},
+              "Description": "技艺超群，可制作极品"
+            },
+            {
+              "StageName": "宗师",
+              "LevelRange": {"Min": 81, "Max": 100},
+              "Description": "技艺登峰造极，可制作神器"
+            }
+          ],
+          "Requirements": {
+            "MinAttributes": {
+              "Strength": 25,
+              "Constitution": 20,
+              "Intelligence": 15
+            },
+            "TrainingEnvironment": "Smithy",
+            "DailyTrainingHours": 4,
+            "Equipment": ["Forge", "Anvil", "Hammer"]
+          },
+          "CraftingBranches": [
+            "WeaponForging",
+            "ArmorCrafting",
+            "ToolMaking",
+            "Decoration",
+            "SpecialItems"
+          ]
+        },
+        {
+          "SkillID": "Woodworking",
+          "Name": "木工技能",
+          "DisplayName": "木工技能",
+          "Description": "制作家具、建筑构件、工艺品",
+          "Category": "Production",
+          "SubCategory": "Manufacturing",
+          "SkillType": "Crafting",
+          "MaxLevel": 100,
+          "CraftingBranches": [
+            "FurnitureMaking",
+            "ConstructionComponents",
+            "Artwork",
+            "ToolMaking",
+            "SpecialDevices"
+          ]
+        }
+      ]
+    },
+    {
+      "CategoryID": "Social",
+      "Name": "社交技能",
+      "DisplayName": "社交技能",
+      "Description": "人际交往、政治手腕、文化修养、商业贸易",
+      "Skills": [
+        {
+          "SkillID": "Trading",
+          "Name": "贸易",
+          "DisplayName": "贸易",
+          "Description": "商业交易和市场运作的技能",
+          "Category": "Social",
+          "SubCategory": "Commerce",
+          "MaxLevel": 10,
+          "BaseExperience": 90,
+          "ExperienceMultiplier": 1.2,
+          "Attributes": {
+            "PrimaryAttribute": "Charisma",
+            "SecondaryAttributes": ["Intelligence", "Perception"]
+          },
+          "Prerequisites": [],
+          "Tools": ["Scales", "Ledger", "Abacus", "Caravan"],
+          "Levels": [
+            {
+              "Level": 1,
+              "Name": "小商贩",
+              "RequiredExperience": 0,
+              "Benefits": {
+                "ProfitMargin": 1.05,
+                "BargainingPower": 1.0,
+                "MarketKnowledge": 0.3
+              },
+              "UnlockedActions": ["LocalTrading", "BasicNegotiation", "PriceCheck"]
+            },
+            {
+              "Level": 3,
+              "Name": "商人",
+              "RequiredExperience": 450,
+              "Benefits": {
+                "ProfitMargin": 1.1,
+                "BargainingPower": 1.1,
+                "MarketKnowledge": 0.5
+              },
+              "UnlockedActions": ["RegionalTrading", "ContractNegotiation", "MarketAnalysis"]
+            },
+            {
+              "Level": 5,
+              "Name": "商业家",
+              "RequiredExperience": 1350,
+              "Benefits": {
+                "ProfitMargin": 1.2,
+                "BargainingPower": 1.2,
+                "MarketKnowledge": 0.7
+              },
+              "UnlockedActions": ["LongDistanceTrading", "InvestmentPlanning", "TradeRouteEstablishment"]
+            },
+            {
+              "Level": 7,
+              "Name": "贸易专家",
+              "RequiredExperience": 3150,
+              "Benefits": {
+                "ProfitMargin": 1.3,
+                "BargainingPower": 1.3,
+                "MarketKnowledge": 0.85
+              },
+              "UnlockedActions": ["MonopolyCreation", "EconomicManipulation", "TradeWarfare"]
+            },
+            {
+              "Level": 10,
+              "Name": "商业大亨",
+              "RequiredExperience": 7500,
+              "Benefits": {
+                "ProfitMargin": 1.5,
+                "BargainingPower": 1.5,
+                "MarketKnowledge": 1.0
+              },
+              "UnlockedActions": ["EconomicEmpire", "GlobalTradeControl", "WealthMagic"]
+            }
+          ],
+          "RegionalBonuses": {
+            "WesternDeserts": 0.4,
+            "CentralPlains": 0.15,
+            "EasternIslands": 0.2,
+            "NorthernSteppes": 0.1,
+            "SouthernJungles": 0.05
+          },
+          "Specializations": [
+            "Negotiation",
+            "MarketAnalysis",
+            "LogisticsManagement",
+            "FinancialPlanning"
+          ]
+        },
+        {
+          "SkillID": "Diplomacy",
+          "Name": "外交",
+          "DisplayName": "外交",
+          "Description": "与他人进行谈判和建立关系的技能",
+          "Category": "Social",
+          "SubCategory": "Communication",
+          "MaxLevel": 10,
+          "BaseExperience": 150,
+          "ExperienceMultiplier": 1.5,
+          "Attributes": {
+            "PrimaryAttribute": "Charisma",
+            "SecondaryAttributes": ["Intelligence", "Empathy"]
+          },
+          "Prerequisites": [],
+          "Tools": ["Seal", "Documents", "Gifts", "Translator"],
+          "Levels": [
+            {
+              "Level": 1,
+              "Name": "使者",
+              "RequiredExperience": 0,
+              "Benefits": {
+                "PersuasionPower": 1.05,
+                "RelationshipBuilding": 1.0,
+                "ConflictResolution": 0.7
+              },
+              "UnlockedActions": ["BasicNegotiation", "MessageDelivery", "SimpleMediation"]
+            }
+          ]
+        },
+        {
+          "SkillID": "Etiquette",
+          "Name": "礼仪修养",
+          "DisplayName": "礼仪修养",
+          "Description": "社交礼仪，文化修养",
+          "Category": "Social",
+          "SubCategory": "Cultural",
+          "SkillType": "Cultural",
+          "MaxLevel": 100
+        },
+        {
+          "SkillID": "Leadership",
+          "Name": "领导能力",
+          "DisplayName": "领导能力",
+          "Description": "统御部下，组织管理",
+          "Category": "Social",
+          "SubCategory": "Management",
+          "SkillType": "Management",
+          "MaxLevel": 100
+        },
+        {
+          "SkillID": "Persuasion",
+          "Name": "说服技巧",
+          "DisplayName": "说服技巧",
+          "Description": "口才辩论，影响他人",
+          "Category": "Social",
+          "SubCategory": "Communication",
+          "SkillType": "Communication",
+          "MaxLevel": 100
+        }
+      ]
+    },
+    {
+      "CategoryID": "Physical",
+      "Name": "体能技能",
+      "DisplayName": "体能技能",
+      "Description": "身体素质、运动技巧相关技能",
+      "Skills": [
+        {
+          "SkillID": "Riding",
+          "Name": "骑术",
+          "DisplayName": "骑术",
+          "Description": "骑乘动物和坐骑控制的技能",
+          "Category": "Physical",
+          "SubCategory": "Movement",
+          "MaxLevel": 10,
+          "BaseExperience": 110,
+          "ExperienceMultiplier": 1.3,
+          "Attributes": {
+            "PrimaryAttribute": "Dexterity",
+            "SecondaryAttributes": ["Strength", "Balance"]
+          },
+          "Prerequisites": [],
+          "Tools": ["Saddle", "Bridle", "Whip", "Spurs"],
+          "Levels": [
+            {
+              "Level": 1,
+              "Name": "新手骑手",
+              "RequiredExperience": 0,
+              "Benefits": {
+                "MountSpeed": 1.0,
+                "MountControl": 0.7,
+                "FallResistance": 0.5
+              },
+              "UnlockedActions": ["BasicRiding", "SlowGait", "SimpleManeuvers"]
+            },
+            {
+              "Level": 3,
+              "Name": "熟练骑手",
+              "RequiredExperience": 550,
+              "Benefits": {
+                "MountSpeed": 1.1,
+                "MountControl": 0.8,
+                "FallResistance": 0.7
+              },
+              "UnlockedActions": ["FastGait", "CombatRiding", "JumpingObstacles"]
+            },
+            {
+              "Level": 5,
+              "Name": "专业骑手",
+              "RequiredExperience": 1650,
+              "Benefits": {
+                "MountSpeed": 1.2,
+                "MountControl": 0.9,
+                "FallResistance": 0.85
+              },
+              "UnlockedActions": ["AerialManeuvers", "MountedArchery", "ChargeAttack"]
+            },
+            {
+              "Level": 7,
+              "Name": "骑术专家",
+              "RequiredExperience": 3850,
+              "Benefits": {
+                "MountSpeed": 1.3,
+                "MountControl": 0.95,
+                "FallResistance": 0.95
+              },
+              "UnlockedActions": ["ExoticMountRiding", "MountBonding", "CavalryTactics"]
+            },
+            {
+              "Level": 10,
+              "Name": "骑术大师",
+              "RequiredExperience": 9000,
+              "Benefits": {
+                "MountSpeed": 1.5,
+                "MountControl": 1.0,
+                "FallResistance": 1.0
+              },
+              "UnlockedActions": ["DragonRiding", "SkyMounting", "MountSummoning"]
+            }
+          ],
+          "RegionalBonuses": {
+            "NorthernSteppes": 0.35,
+            "WesternDeserts": 0.2,
+            "SouthernJungles": -0.2,
+            "CentralPlains": 0.1,
+            "EasternIslands": -0.1
+          }
+        }
+      ]
+    },
+    {
+      "CategoryID": "Combat",
+      "Name": "战斗技能",
+      "DisplayName": "战斗技能",
+      "Description": "武术、兵器、射击等战斗相关技能",
+      "Skills": [
+        {
+          "SkillID": "Archery",
+          "Name": "射术",
+          "DisplayName": "射术",
+          "Description": "使用弓箭进行远程攻击的技能",
+          "Category": "Combat",
+          "SubCategory": "Ranged",
+          "MaxLevel": 10,
+          "BaseExperience": 100,
+          "ExperienceMultiplier": 1.3,
+          "Attributes": {
+            "PrimaryAttribute": "Dexterity",
+            "SecondaryAttributes": ["Perception", "Focus"]
+          },
+          "Prerequisites": [],
+          "Tools": ["Bow", "Arrow", "Quiver", "BowString"],
+          "Levels": [
+            {
+              "Level": 1,
+              "Name": "新手射手",
+              "RequiredExperience": 0,
+              "Benefits": {
+                "Accuracy": 0.6,
+                "Range": 1.0,
+                "Damage": 1.0
+              },
+              "UnlockedActions": ["BasicShooting", "AimingStance", "ArrowRecovery"]
+            },
+            {
+              "Level": 3,
+              "Name": "熟练射手",
+              "RequiredExperience": 500,
+              "Benefits": {
+                "Accuracy": 0.75,
+                "Range": 1.1,
+                "Damage": 1.1
+              },
+              "UnlockedActions": ["RapidFire", "MovingShooting", "WeakPointTargeting"]
+            },
+            {
+              "Level": 5,
+              "Name": "神射手",
+              "RequiredExperience": 1500,
+              "Benefits": {
+                "Accuracy": 0.85,
+                "Range": 1.2,
+                "Damage": 1.2
+              },
+              "UnlockedActions": ["PrecisionShot", "TrickShot", "MultipleTargets"]
+            },
+            {
+              "Level": 7,
+              "Name": "射术专家",
+              "RequiredExperience": 3500,
+              "Benefits": {
+                "Accuracy": 0.92,
+                "Range": 1.3,
+                "Damage": 1.3
+              },
+              "UnlockedActions": ["PowerShot", "CurvedShot", "ArrowRain"]
+            },
+            {
+              "Level": 10,
+              "Name": "射术大师",
+              "RequiredExperience": 8000,
+              "Benefits": {
+                "Accuracy": 1.0,
+                "Range": 1.5,
+                "Damage": 1.5
+              },
+              "UnlockedActions": ["DivineBow", "SoulPiercingArrow", "TimeStopShot"]
+            }
+          ],
+          "RegionalBonuses": {
+            "NorthernSteppes": 0.25,
+            "SouthernJungles": 0.2,
+            "HighMountains": 0.15
+          }
+        }
+      ]
+    },
+    {
+      "CategoryID": "Martial",
+      "Name": "武学技能",
+      "DisplayName": "武学技能",
+      "Description": "内功心法、外功招式、轻功身法、兵器技巧",
+      "Skills": [
+        {
+          "SkillID": "InternalEnergy",
+          "Name": "内功心法",
+          "DisplayName": "内功心法",
+          "Description": "修炼内力，强化体质",
+          "Category": "Martial",
+          "SubCategory": "Internal",
+          "SkillType": "Internal",
+          "MaxLevel": 100,
+          "LevelStages": [
+            {
+              "StageName": "入门",
+              "LevelRange": {"Min": 1, "Max": 20},
+              "Description": "初学乍练，内气微弱"
+            },
+            {
+              "StageName": "小成",
+              "LevelRange": {"Min": 21, "Max": 40},
+              "Description": "略有所成，内气增强"
+            },
+            {
+              "StageName": "大成",
+              "LevelRange": {"Min": 41, "Max": 60},
+              "Description": "功力深厚，内气充沛"
+            },
+            {
+              "StageName": "圆满",
+              "LevelRange": {"Min": 61, "Max": 80},
+              "Description": "炉火纯青，内气如海"
+            },
+            {
+              "StageName": "宗师",
+              "LevelRange": {"Min": 81, "Max": 100},
+              "Description": "登峰造极，内气化神"
+            }
+          ],
+          "Requirements": {
+            "MinAttributes": {
+              "Constitution": 30,
+              "Wisdom": 25
+            },
+            "PrerequisiteSkills": [],
+            "TrainingEnvironment": "Quiet",
+            "DailyTrainingHours": 3,
+            "Resources": ["BasicPills", "TrainingManual"]
+          },
+          "Techniques": [
+            {
+              "TechniqueID": "MixedElementSkill",
+              "Name": "混元功",
+              "Description": "基础内功，平和中正",
+              "Difficulty": "Basic",
+              "PowerMultiplier": 1.0
+            },
+            {
+              "TechniqueID": "TaijiHeartMethod",
+              "Name": "太极心法",
+              "Description": "阴阳调和，刚柔并济",
+              "Difficulty": "Intermediate",
+              "PowerMultiplier": 1.3
+            },
+            {
+              "TechniqueID": "ShaolinInternal",
+              "Name": "少林内功",
+              "Description": "佛门正宗，浩然正气",
+              "Difficulty": "Advanced",
+              "PowerMultiplier": 1.5
+            }
+          ]
+        },
+        {
+          "SkillID": "ExternalMartialArts",
+          "Name": "外功招式",
+          "DisplayName": "外功招式",
+          "Description": "拳脚功夫，招式技巧",
+          "Category": "Martial",
+          "SubCategory": "External",
+          "SkillType": "External",
+          "MaxLevel": 100,
+          "Requirements": {
+            "MinAttributes": {
+              "Strength": 25,
+              "Agility": 30
+            }
+          }
+        },
+        {
+          "SkillID": "WeaponMastery",
+          "Name": "兵器技巧",
+          "DisplayName": "兵器技巧",
+          "Description": "各类兵器的使用技巧",
+          "Category": "Martial",
+          "SubCategory": "Weapon",
+          "SkillType": "Weapon",
+          "MaxLevel": 100,
+          "WeaponTypes": ["Sword", "Saber", "Spear", "Staff", "Bow"]
+        }
+      ]
+    },
+    {
+      "CategoryID": "Knowledge",
+      "Name": "知识技能",
+      "DisplayName": "知识技能",
+      "Description": "学识、医术、导航等知识相关技能",
+      "Skills": [
+        {
+          "SkillID": "Herbalism",
+          "Name": "草药学",
+          "DisplayName": "草药学",
+          "Description": "识别、采集和使用草药的技能",
+          "Category": "Knowledge",
+          "SubCategory": "Medicine",
+          "MaxLevel": 10,
+          "BaseExperience": 130,
+          "ExperienceMultiplier": 1.6,
+          "Attributes": {
+            "PrimaryAttribute": "Intelligence",
+            "SecondaryAttributes": ["Wisdom", "Perception"]
+          },
+          "Prerequisites": [],
+          "Tools": ["HerbKnife", "DryingRack", "Mortar", "Pestle"],
+          "Levels": [
+            {
+              "Level": 1,
+              "Name": "草药学徒",
+              "RequiredExperience": 0,
+              "Benefits": {
+                "HerbIdentification": 0.4,
+                "GatheringYield": 1.0,
+                "PotionEffectiveness": 0.8
+              },
+              "UnlockedActions": ["BasicHerbGathering", "SimplePotion", "HerbIdentification"]
+            },
+            {
+              "Level": 3,
+              "Name": "草药师",
+              "RequiredExperience": 650,
+              "Benefits": {
+                "HerbIdentification": 0.6,
+                "GatheringYield": 1.2,
+                "PotionEffectiveness": 1.0
+              },
+              "UnlockedActions": ["IntermediatePotion", "HerbCultivation", "PoisonDetection"]
+            },
+            {
+              "Level": 5,
+              "Name": "药剂师",
+              "RequiredExperience": 1950,
+              "Benefits": {
+                "HerbIdentification": 0.8,
+                "GatheringYield": 1.4,
+                "PotionEffectiveness": 1.2
+              },
+              "UnlockedActions": ["AdvancedPotion", "AntidoteCreation", "HerbBreeding"]
+            },
+            {
+              "Level": 7,
+              "Name": "草药专家",
+              "RequiredExperience": 4550,
+              "Benefits": {
+                "HerbIdentification": 0.95,
+                "GatheringYield": 1.6,
+                "PotionEffectiveness": 1.4
+              },
+              "UnlockedActions": ["MasterPotion", "PoisonCrafting", "PlantCommunication"]
+            },
+            {
+              "Level": 10,
+              "Name": "草药大师",
+              "RequiredExperience": 10500,
+              "Benefits": {
+                "HerbIdentification": 1.0,
+                "GatheringYield": 2.0,
+                "PotionEffectiveness": 1.8
+              },
+              "UnlockedActions": ["LegendaryElixir", "LifeExtension", "NatureMagic"]
+            }
+          ],
+          "RegionalBonuses": {
+            "SouthernJungles": 0.5,
+            "HighMountains": 0.3,
+            "WesternDeserts": -0.3
+          }
+        },
+        {
+          "SkillID": "Navigation",
+          "Name": "导航",
+          "DisplayName": "导航",
+          "Description": "在陆地和海洋中寻找方向的技能",
+          "Category": "Knowledge",
+          "SubCategory": "Exploration",
+          "MaxLevel": 10,
+          "BaseExperience": 140,
+          "ExperienceMultiplier": 1.4,
+          "Attributes": {
+            "PrimaryAttribute": "Intelligence",
+            "SecondaryAttributes": ["Perception", "Memory"]
+          },
+          "Prerequisites": [],
+          "Tools": ["Compass", "Map", "Sextant", "Astrolabe"],
+          "Levels": [
+            {
+              "Level": 1,
+              "Name": "路痴",
+              "RequiredExperience": 0,
+              "Benefits": {
+                "DirectionSense": 0.5,
+                "MapReading": 0.4,
+                "LandmarkRecognition": 0.3
+              },
+              "UnlockedActions": ["BasicNavigation", "CompassUse", "SimpleMapReading"]
+            },
+            {
+              "Level": 3,
+              "Name": "向导",
+              "RequiredExperience": 700,
+              "Benefits": {
+                "DirectionSense": 0.7,
+                "MapReading": 0.6,
+                "LandmarkRecognition": 0.5
+              },
+              "UnlockedActions": ["TerrainNavigation", "WeatherReading", "TrailFinding"]
+            },
+            {
+              "Level": 5,
+              "Name": "探险家",
+              "RequiredExperience": 2100,
+              "Benefits": {
+                "DirectionSense": 0.85,
+                "MapReading": 0.8,
+                "LandmarkRecognition": 0.7
+              },
+              "UnlockedActions": ["CelestialNavigation", "MapMaking", "RouteOptimization"]
+            },
+            {
+              "Level": 7,
+              "Name": "导航专家",
+              "RequiredExperience": 4900,
+              "Benefits": {
+                "DirectionSense": 0.95,
+                "MapReading": 0.9,
+                "LandmarkRecognition": 0.85
+              },
+              "UnlockedActions": ["OceanNavigation", "UnchartedExploration", "DimensionalMapping"]
+            },
+            {
+              "Level": 10,
+              "Name": "导航大师",
+              "RequiredExperience": 11200,
+              "Benefits": {
+                "DirectionSense": 1.0,
+                "MapReading": 1.0,
+                "LandmarkRecognition": 1.0
+              },
+              "UnlockedActions": ["InstantTravel", "WorldMapping", "SpaceNavigation"]
+            }
+          ],
+          "RegionalBonuses": {
+            "EasternIslands": 0.3,
+            "WesternDeserts": 0.25,
+            "HighMountains": 0.2
+          }
+        },
+        {
+          "SkillID": "Medicine",
+          "Name": "医术",
+          "DisplayName": "医术",
+          "Description": "治疗疾病和伤痛的技能，结合传统草药与新兴医学",
+          "Category": "Knowledge",
+          "SubCategory": "Medicine",
+          "MaxLevel": 10,
+          "BaseExperience": 160,
+          "ExperienceMultiplier": 1.7,
+          "Attributes": {
+            "PrimaryAttribute": "Intelligence",
+            "SecondaryAttributes": ["Wisdom", "Dexterity"]
+          },
+          "Prerequisites": ["Herbalism"],
+          "Tools": ["MedicalKit", "Acupuncture", "Herbs", "Bandages"],
+          "Levels": [
+            {
+              "Level": 1,
+              "Name": "赤脚医生",
+              "RequiredExperience": 0,
+              "Benefits": {
+                "HealingEfficiency": 1.1,
+                "DiagnosisAccuracy": 0.6,
+                "TreatmentSuccess": 0.7
+              },
+              "UnlockedActions": ["BasicHealing", "WoundTreatment", "HerbalRemedy"]
+            }
+          ],
+          "RegionalBonuses": {
+            "SouthernJungles": 0.4,
+            "CentralPlains": 0.2,
+            "HighMountains": 0.1
+          }
+        },
+        {
+          "SkillID": "Firearms",
+          "Name": "火器",
+          "DisplayName": "火器",
+          "Description": "使用和制造火绳枪、火炮等新式武器的技能",
+          "Category": "Knowledge",
+          "SubCategory": "Military",
+          "MaxLevel": 10,
+          "BaseExperience": 180,
+          "ExperienceMultiplier": 1.8,
+          "Attributes": {
+            "PrimaryAttribute": "Intelligence",
+            "SecondaryAttributes": ["Dexterity", "Courage"]
+          },
+          "Prerequisites": ["Crafting"],
+          "Tools": ["Musket", "Gunpowder", "Cannon", "Forge"],
+          "Levels": [
+            {
+              "Level": 1,
+              "Name": "火器学徒",
+              "RequiredExperience": 0,
+              "Benefits": {
+                "FirearmAccuracy": 0.6,
+                "ReloadSpeed": 1.0,
+                "MaintenanceSkill": 0.5
+              },
+              "UnlockedActions": ["BasicShooting", "GunpowderMixing", "SimpleRepair"]
+            }
+          ],
+          "RegionalBonuses": {
+            "SouthernJungles": 0.3,
+            "CentralPlains": 0.2,
+            "WesternDeserts": 0.1
+          }
+        }
+      ]
+    }
+  ],
+  "SkillLearningMethods": [
+    {
+      "MethodID": "MasterTeaching",
+      "Name": "师承传授",
+      "Description": "拜师学艺，系统学习",
+      "EfficiencyMultiplier": 1.5,
+      "Requirements": ["FindMaster", "PayTuition"]
+    },
+    {
+      "MethodID": "SelfStudy",
+      "Name": "自学研习",
+      "Description": "通过书籍、秘籍自学",
+      "EfficiencyMultiplier": 0.8,
+      "Requirements": ["ObtainManual", "SufficientWisdom"]
+    },
+    {
+      "MethodID": "PracticalExperience",
+      "Name": "实战感悟",
+      "Description": "在实践中领悟技能",
+      "EfficiencyMultiplier": 1.2,
+      "Requirements": ["RealCombat", "SufficientExperience"]
+    },
+    {
+      "MethodID": "TalentAwakening",
+      "Name": "天赋觉醒",
+      "Description": "天生异禀，无师自通",
+      "EfficiencyMultiplier": 2.0,
+      "Requirements": ["SpecialTalent", "TriggerEvent"]
+    }
+  ],
+  "SkillSynergies": [
+    {
+      "PrimarySkill": "InternalEnergy",
+      "SynergySkills": ["ExternalMartialArts", "WeaponMastery"],
+      "BonusType": "PowerAmplification",
+      "BonusValue": 0.2
+    },
+    {
+      "PrimarySkill": "Blacksmithing",
+      "SynergySkills": ["Mining", "Trading"],
+      "BonusType": "QualityImprovement",
+      "BonusValue": 0.15
+    },
+    {
+      "PrimarySkill": "Crafting",
+      "SynergySkills": ["Blacksmithing", "Woodworking"],
+      "BonusType": "EfficiencyBonus",
+      "BonusValue": 0.1
+    },
+    {
+      "PrimarySkill": "Herbalism",
+      "SynergySkills": ["Farming", "Navigation"],
+      "BonusType": "ResourceDiscovery",
+      "BonusValue": 0.25
+    },
+    {
+      "PrimarySkill": "Trading",
+      "SynergySkills": ["Diplomacy", "Navigation"],
+      "BonusType": "ProfitBonus",
+      "BonusValue": 0.2
+    }
+  ]
+}

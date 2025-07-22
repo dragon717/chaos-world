@@ -1,0 +1,449 @@
+{
+  "Version": "1.0.0",
+  "LastModified": "2024-01-01T00:00:00Z",
+  "ItemCategories": [
+    {
+      "CategoryID": "Tools",
+      "Name": "工具类",
+      "DisplayName": "工具类",
+      "Description": "各类生产生活工具",
+      "Subcategories": [
+        {
+          "SubcategoryID": "AgriculturalTools",
+          "Name": "农业工具",
+          "Items": [
+            {
+              "ItemID": "WoodenPlow",
+              "Name": "木犁",
+              "DisplayName": "木犁",
+              "Description": "耕地工具，翻土开垦春耕必备",
+              "Materials": ["QualityWood", "RefinedIron", "LeatherRope"],
+              "CraftingRequirements": {
+                "Skills": {
+                  "Woodworking": 30,
+                  "Blacksmithing": 20
+                },
+                "Tools": ["Workbench", "Forge"],
+                "Time": 480
+              },
+              "Properties": {
+                "Weight": 25.0,
+                "Durability": 500,
+                "EfficiencyBonus": 3.0,
+                "TerrainSuitability": ["Plains", "Hills", "LightSlope"]
+              },
+              "Usage": {
+                "Function": "Plowing",
+                "RequiredAnimal": ["Ox", "Horse"],
+                "WorkEfficiency": 5.0,
+                "MaintenanceInterval": 30
+              },
+              "Lifespan": {
+                "Years": 8,
+                "UsageDependent": true
+              }
+            },
+            {
+              "ItemID": "IronHoe",
+              "Name": "铁锄",
+              "DisplayName": "铁锄",
+              "Description": "松土工具，除草整地通用",
+              "Materials": ["RefinedIron", "HardWood", "IronNails"],
+              "CraftingRequirements": {
+                "Skills": {
+                  "Blacksmithing": 25,
+                  "Woodworking": 15
+                },
+                "Tools": ["Forge", "Anvil", "Hammer"],
+                "Time": 180
+              },
+              "Properties": {
+                "Weight": 2.5,
+                "Durability": 300,
+                "SharpnessRetention": 0.8,
+                "Variants": [
+                  {"Type": "Heavy", "WeightMultiplier": 1.5, "EfficiencyMultiplier": 1.3},
+                  {"Type": "Standard", "WeightMultiplier": 1.0, "EfficiencyMultiplier": 1.0},
+                  {"Type": "Light", "WeightMultiplier": 0.7, "EfficiencyMultiplier": 0.8}
+                ]
+              },
+              "Usage": {
+                "Function": "SoilLoosening",
+                "CropCompatibility": "Universal",
+                "WorkEfficiency": 2.0
+              }
+            },
+            {
+              "ItemID": "WoodenRake",
+              "Name": "木耙",
+              "DisplayName": "木耙",
+              "Description": "整地工具，碎土平整覆盖",
+              "Materials": ["HardWood", "IronBars", "Rope"],
+              "Properties": {
+                "Weight": 3.0,
+                "Durability": 250,
+                "TeethCount": 18,
+                "WorkWidth": 1.2
+              },
+              "Variants": [
+                {"TeethCount": 12, "Purpose": "FineWork"},
+                {"TeethCount": 18, "Purpose": "General"},
+                {"TeethCount": 24, "Purpose": "RoughWork"}
+              ]
+            }
+          ]
+        },
+        {
+          "SubcategoryID": "CraftingTools",
+          "Name": "手工艺工具",
+          "Items": [
+            {
+              "ItemID": "SmithHammer",
+              "Name": "锻造锤",
+              "DisplayName": "锻造锤",
+              "Description": "铁匠专用锤子，锻造金属必备",
+              "Materials": ["HighCarbonSteel", "HardwoodHandle"],
+              "Properties": {
+                "Weight": 1.5,
+                "Durability": 800,
+                "ForceMultiplier": 2.5,
+                "Precision": 0.9
+              }
+            },
+            {
+              "ItemID": "WoodworkingChisel",
+              "Name": "木工凿",
+              "DisplayName": "木工凿",
+              "Description": "精细木工工具，雕刻细节专用",
+              "Materials": ["HighQualitySteel", "WoodHandle"],
+              "Properties": {
+                "Weight": 0.3,
+                "Durability": 400,
+                "Precision": 0.95,
+                "DetailLevel": "Fine"
+              }
+            }
+          ]
+        },
+        {
+          "SubcategoryID": "ScholarlyTools",
+          "Name": "文房用品",
+          "Items": [
+            {
+              "ItemID": "WritingBrush",
+              "Name": "毛笔",
+              "DisplayName": "毛笔",
+              "Description": "书法绘画工具，文人必备",
+              "Materials": ["AnimalHair", "BambooHandle"],
+              "Properties": {
+                "Weight": 0.05,
+                "Durability": 100,
+                "WritingQuality": 0.9,
+                "InkAbsorption": 0.8
+              },
+              "CulturalValue": "High",
+              "SkillBonus": {
+                "Calligraphy": 0.1,
+                "Painting": 0.1
+              }
+            },
+            {
+              "ItemID": "InkStone",
+              "Name": "砚台",
+              "DisplayName": "砚台",
+              "Description": "研磨墨汁的工具",
+              "Materials": ["QualityStone"],
+              "Properties": {
+                "Weight": 2.0,
+                "Durability": 2000,
+                "InkQuality": 0.95
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "CategoryID": "Entertainment",
+      "Name": "娱乐类",
+      "DisplayName": "娱乐类",
+      "Description": "休闲娱乐用品",
+      "Subcategories": [
+        {
+          "SubcategoryID": "MusicalInstruments",
+          "Name": "乐器",
+          "Items": [
+            {
+              "ItemID": "Guqin",
+              "Name": "古琴",
+              "DisplayName": "古琴",
+              "Description": "七弦古琴，文人雅士之乐",
+              "Materials": ["AgedWood", "SilkStrings"],
+              "Properties": {
+                "Weight": 3.5,
+                "Durability": 1000,
+                "SoundQuality": 0.95,
+                "CulturalValue": "VeryHigh"
+              },
+              "SkillBonus": {
+                "Music": 0.2,
+                "CulturalInfluence": 0.15
+              },
+              "CraftingRequirements": {
+                "Skills": {
+                  "Woodworking": 60,
+                  "Music": 40
+                },
+                "Time": 2400
+              }
+            },
+            {
+              "ItemID": "Flute",
+              "Name": "竹笛",
+              "DisplayName": "竹笛",
+              "Description": "竹制横笛，清雅悠扬",
+              "Materials": ["QualityBamboo"],
+              "Properties": {
+                "Weight": 0.2,
+                "Durability": 300,
+                "SoundQuality": 0.8,
+                "Portability": "High"
+              }
+            }
+          ]
+        },
+        {
+          "SubcategoryID": "TraditionalGames",
+          "Name": "传统游戏",
+          "Items": [
+            {
+              "ItemID": "GoBoard",
+              "Name": "围棋",
+              "DisplayName": "围棋",
+              "Description": "策略棋类游戏，智慧的较量",
+              "Materials": ["QualityWood", "BlackStones", "WhiteStones"],
+              "Properties": {
+                "Weight": 2.0,
+                "Durability": 1500,
+                "IntellectualValue": "High"
+              },
+              "SkillBonus": {
+                "Strategy": 0.1,
+                "Intelligence": 0.05
+              }
+            }
+          ]
+        },
+        {
+          "SubcategoryID": "FestivalItems",
+          "Name": "节庆用品",
+          "Items": [
+            {
+              "ItemID": "Lantern",
+              "Name": "灯笼",
+              "DisplayName": "灯笼",
+              "Description": "节庆装饰，营造氛围",
+              "Materials": ["BambooFrame", "SilkPaper", "Candle"],
+              "Properties": {
+                "Weight": 0.5,
+                "Durability": 50,
+                "LightRadius": 3.0,
+                "FestivalValue": "High"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "CategoryID": "Food",
+      "Name": "饮食类",
+      "DisplayName": "饮食类",
+      "Description": "各类食物饮品",
+      "Subcategories": [
+        {
+          "SubcategoryID": "Staples",
+          "Name": "主食类",
+          "Items": [
+            {
+              "ItemID": "CookedRice",
+              "Name": "米饭",
+              "DisplayName": "米饭",
+              "Description": "蒸煮的稻米，基础主食",
+              "Ingredients": ["Rice", "Water"],
+              "Properties": {
+                "Weight": 0.3,
+                "NutritionalValue": 80,
+                "SatietyValue": 70,
+                "PreservationTime": 24,
+                "CookingTime": 45
+              },
+              "Effects": {
+                "Hunger": 70,
+                "Energy": 60,
+                "Health": 5
+              },
+              "RegionalPreference": {
+                "CentralPlains": 1.2,
+                "SouthernJungle": 1.1,
+                "EasternIslands": 1.3
+              }
+            },
+            {
+              "ItemID": "Noodles",
+              "Name": "面条",
+              "DisplayName": "面条",
+              "Description": "小麦制作的面食",
+              "Ingredients": ["WheatFlour", "Water", "Salt"],
+              "Properties": {
+                "Weight": 0.25,
+                "NutritionalValue": 85,
+                "SatietyValue": 75,
+                "PreservationTime": 12,
+                "CookingTime": 20
+              },
+              "Effects": {
+                "Hunger": 75,
+                "Energy": 65,
+                "Warmth": 10
+              }
+            }
+          ]
+        },
+        {
+          "SubcategoryID": "SideDishes",
+          "Name": "副食类",
+          "Items": [
+            {
+              "ItemID": "StirFriedVegetables",
+              "Name": "炒青菜",
+              "DisplayName": "炒青菜",
+              "Description": "新鲜蔬菜炒制",
+              "Ingredients": ["GreenVegetables", "Oil", "Salt"],
+              "Properties": {
+                "Weight": 0.2,
+                "NutritionalValue": 40,
+                "VitaminContent": "High",
+                "PreservationTime": 8
+              },
+              "Effects": {
+                "Health": 15,
+                "Vitality": 10
+              }
+            }
+          ]
+        },
+        {
+          "SubcategoryID": "Beverages",
+          "Name": "饮品类",
+          "Items": [
+            {
+              "ItemID": "Tea",
+              "Name": "茶水",
+              "DisplayName": "茶水",
+              "Description": "清香茶叶冲泡的饮品",
+              "Ingredients": ["TeaLeaves", "HotWater"],
+              "Properties": {
+                "Weight": 0.25,
+                "Temperature": "Hot",
+                "CaffeineContent": "Moderate",
+                "CulturalValue": "High"
+              },
+              "Effects": {
+                "Thirst": 60,
+                "Focus": 10,
+                "CulturalAppreciation": 5
+              },
+              "SkillBonus": {
+                "Meditation": 0.05,
+                "SocialEtiquette": 0.05
+              }
+            },
+            {
+              "ItemID": "RiceWine",
+              "Name": "米酒",
+              "DisplayName": "米酒",
+              "Description": "发酵米制酒类",
+              "Ingredients": ["Rice", "Yeast", "Water"],
+              "Properties": {
+                "Weight": 0.5,
+                "AlcoholContent": 0.15,
+                "AgingTime": 180,
+                "CulturalValue": "Moderate"
+              },
+              "Effects": {
+                "Thirst": 40,
+                "SocialBonus": 15,
+                "Intoxication": 20
+              }
+            }
+          ]
+        },
+        {
+          "SubcategoryID": "RegionalSpecialties",
+          "Name": "五大区域特色食品",
+          "Items": [
+            {
+              "ItemID": "CentralPlainsDumplings",
+              "Name": "中原水饺",
+              "DisplayName": "中原水饺",
+              "Description": "中原地区特色面食",
+              "Region": "CentralPlains",
+              "Ingredients": ["WheatFlour", "PorkMeat", "Vegetables"],
+              "CulturalSignificance": "High",
+              "RegionalBonus": {
+                "CentralPlains": {
+                  "SatietyBonus": 1.3,
+                  "CulturalValue": 1.5
+                }
+              }
+            },
+            {
+              "ItemID": "EasternSeafood",
+              "Name": "东海海鲜",
+              "DisplayName": "东海海鲜",
+              "Description": "东海诸岛新鲜海产",
+              "Region": "EasternIslands",
+              "Ingredients": ["FreshFish", "Shellfish", "Seaweed"],
+              "Properties": {
+                "Freshness": "VeryHigh",
+                "ProteinContent": "High",
+                "PreservationDifficulty": "High"
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "CraftingSystem": {
+    "QualityFactors": {
+      "MaterialQuality": 0.4,
+      "CraftsmanSkill": 0.3,
+      "ToolQuality": 0.2,
+      "Environment": 0.1
+    },
+    "CraftingTime": {
+      "BaseTime": "SkillDependent",
+      "QualityMultiplier": {
+        "Poor": 0.7,
+        "Common": 1.0,
+        "Fine": 1.5,
+        "Superior": 2.0,
+        "Masterwork": 3.0
+      }
+    }
+  },
+  "UsageSystem": {
+    "DurabilityLoss": {
+      "NormalUse": 1,
+      "HeavyUse": 3,
+      "Abuse": 10
+    },
+    "MaintenanceBonus": {
+      "Regular": 1.5,
+      "Professional": 2.0,
+      "Master": 3.0
+    }
+  }
+}

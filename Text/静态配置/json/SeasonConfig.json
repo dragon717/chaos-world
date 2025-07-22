@@ -1,0 +1,154 @@
+{
+  "Version": "1.0.0",
+  "LastModified": "2024-01-01T00:00:00Z",
+  "Seasons": [
+    {
+      "SeasonID": "Spring",
+      "Name": "春季",
+      "DisplayName": "春季",
+      "Description": "万物复苏，生机盎然的季节",
+      "Duration": 90,
+      "Order": 1,
+      "GlobalEffects": {
+        "PlantGrowth": 1.20,
+        "GatheringEfficiency": 1.15,
+        "CultivationBonus": 1.05,
+        "TradeActivity": 1.10,
+        "PopulationGrowth": 1.05
+      },
+      "SpecialProducts": [
+        "SpringBambooShoot",
+        "TenderLeaves",
+        "WildVegetables",
+        "FreshHerbs"
+      ],
+      "Festivals": [
+        {
+          "Name": "SpringFestival",
+          "Description": "庆祝春天到来的节日",
+          "Day": 15,
+          "Effects": {
+            "Happiness": 0.2,
+            "CulturalInfluence": 0.1
+          }
+        }
+      ],
+      "WeatherPatterns": {
+        "RainProbability": 0.4,
+        "StormProbability": 0.1,
+        "ClearDayProbability": 0.5
+      }
+    },
+    {
+      "SeasonID": "Summer",
+      "Name": "夏季",
+      "DisplayName": "夏季",
+      "Description": "炎热多雨，作物茂盛的季节",
+      "Duration": 90,
+      "Order": 2,
+      "GlobalEffects": {
+        "HarvestYield": 1.10,
+        "DisasterRisk": 1.30,
+        "WaterConsumption": 1.25,
+        "TradeActivity": 1.20,
+        "CraftingSpeed": 0.90
+      },
+      "SpecialProducts": [
+        "SummerFruits",
+        "Melons",
+        "LotusSeeds",
+        "SummerFlowers"
+      ],
+      "Festivals": [
+        {
+          "Name": "DragonBoatFestival",
+          "Description": "端午节庆典",
+          "Day": 45,
+          "Effects": {
+            "Unity": 0.15,
+            "WaterSkills": 0.1
+          }
+        }
+      ],
+      "WeatherPatterns": {
+        "RainProbability": 0.6,
+        "StormProbability": 0.2,
+        "ClearDayProbability": 0.2
+      }
+    },
+    {
+      "SeasonID": "Autumn",
+      "Name": "秋季",
+      "DisplayName": "秋季",
+      "Description": "收获的季节，天高气爽",
+      "Duration": 90,
+      "Order": 3,
+      "GlobalEffects": {
+        "HarvestYield": 1.30,
+        "CulturalActivity": 1.20,
+        "CraftingQuality": 1.15,
+        "TradeProfit": 1.10,
+        "StudyEfficiency": 1.05
+      },
+      "SpecialProducts": [
+        "AutumnFruits",
+        "Nuts",
+        "Grains",
+        "MedicinalHerbs"
+      ],
+      "Festivals": [
+        {
+          "Name": "MidAutumnFestival",
+          "Description": "中秋佳节",
+          "Day": 45,
+          "Effects": {
+            "FamilyBonds": 0.2,
+            "CulturalInfluence": 0.15
+          }
+        }
+      ],
+      "WeatherPatterns": {
+        "RainProbability": 0.3,
+        "StormProbability": 0.05,
+        "ClearDayProbability": 0.65
+      }
+    },
+    {
+      "SeasonID": "Winter",
+      "Name": "冬季",
+      "DisplayName": "冬季",
+      "Description": "寒冷的季节，适合学习和手工制作",
+      "Duration": 90,
+      "Order": 4,
+      "GlobalEffects": {
+        "CraftActivity": 1.10,
+        "StudyBonus": 1.15,
+        "FoodConsumption": 1.20,
+        "FuelConsumption": 1.50,
+        "TravelDifficulty": 1.30
+      },
+      "SpecialProducts": [
+        "WinterVegetables",
+        "PreservedFoods",
+        "WinterHerbs",
+        "IceFish"
+      ],
+      "Festivals": [
+        {
+          "Name": "WinterSolstice",
+          "Description": "冬至节",
+          "Day": 45,
+          "Effects": {
+            "Warmth": 0.1,
+            "FamilyBonds": 0.15
+          }
+        }
+      ],
+      "WeatherPatterns": {
+        "SnowProbability": 0.4,
+        "StormProbability": 0.15,
+        "ClearDayProbability": 0.45
+      }
+    }
+  ]
+}

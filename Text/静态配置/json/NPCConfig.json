@@ -1,0 +1,157 @@
+{
+  "Version": "1.0.0",
+  "LastModified": "2024-01-01T00:00:00Z",
+  "NPCTemplates": [
+    {
+      "TemplateID": "Scholar",
+      "Name": "学者",
+      "DisplayName": "学者",
+      "Description": "博学多才的知识分子，擅长教学和研究",
+      "Category": "Intellectual",
+      "BaseAttributes": {
+        "Strength": 8,
+        "Agility": 10,
+        "Intelligence": 18,
+        "Wisdom": 16,
+        "Charisma": 14,
+        "Constitution": 12
+      },
+      "Skills": {
+        "Reading": 8,
+        "Writing": 8,
+        "Mathematics": 7,
+        "History": 9,
+        "Philosophy": 6,
+        "Teaching": 7
+      },
+      "CultivationRealm": "Existence",
+      "SocialClass": "Upper",
+      "Occupation": "Scholar",
+      "Personality": {
+        "Traits": ["Curious", "Patient", "Analytical"],
+        "Values": ["Knowledge", "Truth", "Education"]
+      },
+      "Equipment": [
+        "ScholarRobe",
+        "WritingBrush",
+        "ScrollCase"
+      ],
+      "Dialogue": {
+        "Greeting": "愿知识之光照亮你的道路。",
+        "Farewell": "愿你在学问之路上精进不息。",
+        "Topics": ["History", "Philosophy", "Literature"]
+      }
+    },
+    {
+      "TemplateID": "Merchant",
+      "Name": "商人",
+      "DisplayName": "商人",
+      "Description": "精明的贸易商，善于经商和谈判",
+      "Category": "Commercial",
+      "BaseAttributes": {
+        "Strength": 12,
+        "Agility": 14,
+        "Intelligence": 15,
+        "Wisdom": 13,
+        "Charisma": 17,
+        "Constitution": 13
+      },
+      "Skills": {
+        "Negotiation": 8,
+        "Appraisal": 7,
+        "Accounting": 6,
+        "Persuasion": 8,
+        "Geography": 5,
+        "Languages": 6
+      },
+      "CultivationRealm": "Primitive",
+      "SocialClass": "Middle",
+      "Occupation": "Merchant",
+      "Personality": {
+        "Traits": ["Shrewd", "Sociable", "Opportunistic"],
+        "Values": ["Profit", "Reputation", "Network"]
+      },
+      "Equipment": [
+        "MerchantClothes",
+        "CoinPouch",
+        "TradingLedger"
+      ],
+      "Dialogue": {
+        "Greeting": "欢迎光临！今日有何贵干？",
+        "Farewell": "生意兴隆，下次再来！",
+        "Topics": ["Trade", "Prices", "News"]
+      }
+    },
+    {
+      "TemplateID": "Farmer",
+      "Name": "农夫",
+      "DisplayName": "农夫",
+      "Description": "勤劳朴实的农民，精通农业生产",
+      "Category": "Agricultural",
+      "BaseAttributes": {
+        "Strength": 16,
+        "Agility": 12,
+        "Intelligence": 10,
+        "Wisdom": 14,
+        "Charisma": 9,
+        "Constitution": 15
+      },
+      "Skills": {
+        "Farming": 9,
+        "AnimalHusbandry": 7,
+        "WeatherLore": 6,
+        "Herbalism": 5,
+        "Crafting": 4,
+        "Endurance": 8
+      },
+      "CultivationRealm": "Primitive",
+      "SocialClass": "Lower",
+      "Occupation": "Farmer",
+      "Personality": {
+        "Traits": ["Hardworking", "Honest", "Simple"],
+        "Values": ["Family", "Harvest", "Tradition"]
+      },
+      "Equipment": [
+        "FarmClothes",
+        "Hoe",
+        "SeedPouch"
+      ],
+      "Dialogue": {
+        "Greeting": "日安！今年收成不错呢。",
+        "Farewell": "愿你五谷丰登！",
+        "Topics": ["Weather", "Crops", "Seasons"]
+      }
+    }
+  ],
+  "NPCCategories": [
+    {
+      "CategoryID": "Intellectual",
+      "Name": "知识分子",
+      "Description": "以知识和学问为主的职业群体",
+      "CommonOccupations": ["Scholar", "Teacher", "Scribe", "Philosopher"]
+    },
+    {
+      "CategoryID": "Commercial",
+      "Name": "商业人士",
+      "Description": "从事贸易和商业活动的群体",
+      "CommonOccupations": ["Merchant", "Trader", "Banker", "Shopkeeper"]
+    },
+    {
+      "CategoryID": "Agricultural",
+      "Name": "农业从业者",
+      "Description": "从事农业生产的劳动者",
+      "CommonOccupations": ["Farmer", "Herder", "Gardener", "Fisherman"]
+    },
+    {
+      "CategoryID": "Artisan",
+      "Name": "手工艺者",
+      "Description": "掌握各种手工技艺的工匠",
+      "CommonOccupations": ["Blacksmith", "Carpenter", "Weaver", "Potter"]
+    }
+  ],
+  "DialogueSystem": {
+    "GreetingTypes": ["Formal", "Casual", "Friendly", "Respectful"],
+    "TopicCategories": ["Personal", "Professional", "News", "Weather", "Trade"],
+    "EmotionStates": ["Happy", "Neutral", "Sad", "Angry", "Excited", "Worried"]
+  }
+}

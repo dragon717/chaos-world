@@ -1,0 +1,88 @@
+{
+  "RegionalTribes": {
+    "CentralDomain": {
+      "RegionID": "CentralDomain",
+      "Name": "中域",
+      "DisplayName": "中原农桑之地",
+      "Description": "以农业为主的文明核心区域，儒家文化盛行",
+      "Geography": {
+        "Terrain": ["平原", "丘陵", "河谷"],
+        "Climate": "温带季风气候",
+        "Resources": ["肥沃土壤", "河流水系", "森林"]
+      },
+      "CoreFeatures": ["农业文明", "儒家文化", "科举制度", "宗族社会"],
+      "Tribes": [
+        {
+          "TribeID": "CentralFarmers",
+          "Name": "中原农桑部族",
+          "Description": "以农业为主的定居部族，崇尚儒家文化",
+          "Population": 50000,
+          "Culture": {
+            "Religion": "儒家思想",
+            "Language": "中原官话",
+            "Traditions": ["春耕秋收", "祭祖仪式", "科举考试"]
+          },
+          "Government": {
+            "Type": "宗族自治",
+            "Leader": "族长",
+            "Structure": "等级制"
+          },
+          "Economy": {
+            "Primary": "农业",
+            "Secondary": "手工业",
+            "TradeGoods": ["粮食", "丝绸", "茶叶", "瓷器"]
+          },
+          "Military": {
+            "Type": "民兵",
+            "Strength": "Medium",
+            "Specialization": "防御"
+          },
+          "Skills": [
+            {
+              "SkillName": "Agriculture",
+              "BaseLevel": 5,
+              "Bonus": 0.3
+            },
+            {
+              "SkillName": "Crafting",
+              "BaseLevel": 3,
+              "Bonus": 0.2
+            }
+          ]
+        }
+      ]
+    }
+  },
+  "CultivationSystem": {
+    "Description": "修身五境体系 - 基于德行修养的社会等级制度",
+    "CultivationRealms": [
+      {
+        "RealmID": "PrimitiveRealm",
+        "Name": "原始境",
+        "Description": "初生状态，本能驱动，需要启蒙教育",
+        "Level": 1,
+        "Population": "40%",
+        "SocialStatus": "Common"
+      }
+    ],
+    "VirtueCategories": {
+      "仁": {"Name": "仁爱", "Description": "慈悲心、同情心、爱护他人"},
+      "义": {"Name": "正义", "Description": "公正、正直、维护正义"},
+      "礼": {"Name": "礼仪", "Description": "礼貌、尊重、社会规范"},
+      "智": {"Name": "智慧", "Description": "知识、理解、明智决策"},
+      "信": {"Name": "诚信", "Description": "诚实、守信、可靠"}
+    }
+  },
+  "Relations": {
+    "InterRegionalRelations": {
+      "Description": "五大区域间的政治、经济、文化关系网络",
+      "TradeNetworks": {
+        "SilkRoad": {
+          "Description": "连接中域、西域、北域的陆上贸易大动脉",
+          "Participants": ["CentralDomain", "WesternDomain", "NorthernDomain"],
+          "MainGoods": ["丝绸", "香料", "马匹", "皮毛", "茶叶"]
+        }
+      }
+    }
+  }
+}

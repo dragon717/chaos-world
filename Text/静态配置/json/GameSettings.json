@@ -1,0 +1,40 @@
+{
+  "Version": "1.0.0",
+  "LastModified": "2024-01-01T00:00:00Z",
+  "GameSettings": {
+    "TimeFlow": {
+      "RealToGameRatio": 60,
+      "PauseOnMenu": true,
+      "ContinueWhenOffline": true
+    },
+    "WorldSize": {
+      "TotalPopulation": 100000000,
+      "ActiveRegions": 5,
+      "SimulationDepth": "High"
+    },
+    "Difficulty": {
+      "Level": "Normal",
+      "EconomicChallenge": 1.0,
+      "CombatDifficulty": 1.0,
+      "ResourceScarcity": 1.0
+    },
+    "Interface": {
+      "Language": "zh-CN",
+      "AutoSave": true,
+      "AutoSaveInterval": 300,
+      "ShowTutorials": true
+    },
+    "Audio": {
+      "MasterVolume": 0.8,
+      "MusicVolume": 0.7,
+      "SFXVolume": 0.8,
+      "VoiceVolume": 0.9
+    },
+    "Graphics": {
+      "Quality": "High",
+      "Resolution": "1920x1080",
+      "Fullscreen": true,
+      "VSync": true
+    }
+  }
+}

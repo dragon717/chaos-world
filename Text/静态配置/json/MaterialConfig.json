@@ -1,0 +1,135 @@
+{
+  "Version": "1.0.0",
+  "LastModified": "2024-01-01T00:00:00Z",
+  "Materials": [
+    {
+      "MaterialID": "IronIngot",
+      "Name": "铁锭",
+      "DisplayName": "铁锭",
+      "Description": "经过冶炼的铁制材料，用于制作各种工具和武器",
+      "Category": "Metal",
+      "Quality": {
+        "Base": "Common",
+        "Possible": ["Poor", "Common", "Fine", "Superior"]
+      },
+      "Properties": {
+        "Hardness": 7,
+        "Durability": 150,
+        "Weight": 5.0,
+        "MeltingPoint": 1538,
+        "Conductivity": 0.6
+      },
+      "CraftingApplications": [
+        "Weapons",
+        "Tools",
+        "Armor",
+        "Construction"
+      ],
+      "BasePrice": 25,
+      "StackSize": 20
+    },
+    {
+      "MaterialID": "SilkFabric",
+      "Name": "丝绸",
+      "DisplayName": "丝绸",
+      "Description": "柔软光滑的高级纺织品，象征财富和地位",
+      "Category": "Textile",
+      "Quality": {
+        "Base": "Fine",
+        "Possible": ["Common", "Fine", "Superior", "Masterwork"]
+      },
+      "Properties": {
+        "Softness": 9,
+        "Durability": 80,
+        "Weight": 0.5,
+        "Breathability": 8,
+        "Luxury": 9
+      },
+      "CraftingApplications": [
+        "Clothing",
+        "Decoration",
+        "Ceremonial"
+      ],
+      "BasePrice": 100,
+      "StackSize": 50
+    },
+    {
+      "MaterialID": "BambooFiber",
+      "Name": "竹纤维",
+      "DisplayName": "竹纤维",
+      "Description": "轻便耐用的天然材料，环保且用途广泛",
+      "Category": "Natural",
+      "Quality": {
+        "Base": "Common",
+        "Possible": ["Poor", "Common", "Fine"]
+      },
+      "Properties": {
+        "Flexibility": 8,
+        "Durability": 60,
+        "Weight": 0.3,
+        "Sustainability": 10,
+        "WaterResistance": 6
+      },
+      "CraftingApplications": [
+        "Tools",
+        "Containers",
+        "Construction",
+        "Textiles"
+      ],
+      "BasePrice": 5,
+      "StackSize": 100
+    },
+    {
+      "MaterialID": "Jade",
+      "Name": "玉石",
+      "DisplayName": "玉石",
+      "Description": "珍贵的宝石材料，具有文化和精神价值",
+      "Category": "Gemstone",
+      "Quality": {
+        "Base": "Superior",
+        "Possible": ["Fine", "Superior", "Masterwork", "Legendary"]
+      },
+      "Properties": {
+        "Hardness": 6,
+        "Durability": 200,
+        "Weight": 3.0,
+        "SpiritualValue": 9,
+        "Beauty": 10
+      },
+      "CraftingApplications": [
+        "Jewelry",
+        "Ceremonial",
+        "Decoration",
+        "Spiritual"
+      ],
+      "BasePrice": 500,
+      "StackSize": 10
+    }
+  ],
+  "MaterialCategories": [
+    {
+      "CategoryID": "Metal",
+      "Name": "金属材料",
+      "Description": "各种金属制品和合金",
+      "CommonUses": ["武器制作", "工具制作", "建筑", "装饰"]
+    },
+    {
+      "CategoryID": "Textile",
+      "Name": "纺织材料",
+      "Description": "各种纤维和布料",
+      "CommonUses": ["服装制作", "装饰", "包装", "绳索"]
+    },
+    {
+      "CategoryID": "Natural",
+      "Name": "天然材料",
+      "Description": "来自自然的原始材料",
+      "CommonUses": ["手工艺", "建筑", "工具", "日用品"]
+    },
+    {
+      "CategoryID": "Gemstone",
+      "Name": "宝石材料",
+      "Description": "珍贵的矿物和宝石",
+      "CommonUses": ["首饰", "装饰", "仪式", "收藏"]
+    }
+  ]
+}

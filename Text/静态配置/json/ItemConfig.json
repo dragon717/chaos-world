@@ -1,0 +1,714 @@
+{
+  "Version": "1.0.0",
+  "LastModified": "2024-01-01T00:00:00Z",
+  "Items": [
+    {
+      "ItemID": "IronOre",
+      "Name": "铁矿石",
+      "DisplayName": "铁矿石",
+      "Description": "基础冶炼材料，分布于高山岭脊地区",
+      "Category": "Mineral",
+      "SubCategory": "MetalOre",
+      "Quality": {
+        "Base": "Common",
+        "Possible": ["Poor", "Common", "Fine", "Superior"]
+      },
+      "Rarity": "Common",
+      "Properties": {
+        "Weight": 2.5,
+        "Volume": 1.0,
+        "Durability": 100,
+        "StackSize": 50,
+        "BasePrice": 10
+      },
+      "Attributes": {
+        "Hardness": 6,
+        "Purity": 0.7,
+        "MeltingPoint": 1538
+      },
+      "ObtainMethods": [
+        {
+          "Method": "Mining",
+          "Location": ["HighMountains", "HillsideCliffs"],
+          "Difficulty": "Easy",
+          "RequiredTools": ["Pickaxe"],
+          "RequiredSkills": {
+            "Mining": 1
+          },
+          "YieldRange": {
+            "Min": 1,
+            "Max": 5,
+            "Average": 2.5
+          }
+        }
+      ],
+      "Usage": {
+        "CraftingMaterial": true,
+        "Consumable": false,
+        "Equipment": false,
+        "TradeGood": true
+      },
+      "CraftingRecipes": [
+        {
+          "ResultItem": "IronIngot",
+          "RequiredAmount": 3,
+          "RequiredFacility": "Furnace",
+          "RequiredSkill": {
+            "Smelting": 2
+          }
+        }
+      ],
+      "RegionalModifiers": {
+        "HighMountains": {
+          "QualityBonus": 0.2,
+          "YieldBonus": 0.1
+        },
+        "HillsideCliffs": {
+          "QualityBonus": 0.1,
+          "YieldBonus": 0.15
+        }
+      },
+      "SeasonalModifiers": {
+        "Spring": {
+          "AvailabilityModifier": 1.0
+        },
+        "Summer": {
+          "AvailabilityModifier": 1.1
+        },
+        "Autumn": {
+          "AvailabilityModifier": 1.0
+        },
+        "Winter": {
+          "AvailabilityModifier": 0.8
+        }
+      }
+    },
+    {
+      "ItemID": "CopperOre",
+      "Name": "铜矿石",
+      "DisplayName": "铜矿石",
+      "Description": "合金制作材料，分布于丘陵林地",
+      "Category": "Mineral",
+      "SubCategory": "MetalOre",
+      "Quality": {
+        "Base": "Common",
+        "Possible": ["Poor", "Common", "Fine", "Superior"]
+      },
+      "Rarity": "Common",
+      "Properties": {
+        "Weight": 2.2,
+        "Volume": 1.0,
+        "Durability": 100,
+        "StackSize": 50,
+        "BasePrice": 8
+      },
+      "Attributes": {
+        "Hardness": 4,
+        "Purity": 0.8,
+        "MeltingPoint": 1085
+      },
+      "ObtainMethods": [
+        {
+          "Method": "Mining",
+          "Location": ["RollingHills", "RiverValleys"],
+          "Difficulty": "Easy",
+          "RequiredTools": ["Pickaxe"],
+          "RequiredSkills": {
+            "Mining": 1
+          },
+          "YieldRange": {
+            "Min": 1,
+            "Max": 4,
+            "Average": 2.0
+          }
+        }
+      ],
+      "Usage": {
+        "CraftingMaterial": true,
+        "Consumable": false,
+        "Equipment": false,
+        "TradeGood": true
+      },
+      "CraftingRecipes": [
+        {
+          "ResultItem": "CopperIngot",
+          "RequiredAmount": 3,
+          "RequiredFacility": "Furnace",
+          "RequiredSkill": {
+            "Smelting": 1
+          }
+        },
+        {
+          "ResultItem": "BronzeAlloy",
+          "RequiredAmount": 2,
+          "AdditionalMaterials": ["TinOre"],
+          "RequiredFacility": "Furnace",
+          "RequiredSkill": {
+            "Smelting": 3
+          }
+        }
+      ]
+    },
+    {
+      "ItemID": "SilverOre",
+      "Name": "银矿石",
+      "DisplayName": "银矿石",
+      "Description": "贵重金属材料，分布于高山深处",
+      "Category": "Mineral",
+      "SubCategory": "MetalOre",
+      "Quality": {
+        "Base": "Fine",
+        "Possible": ["Common", "Fine", "Superior", "Masterwork"]
+      },
+      "Rarity": "Uncommon",
+      "Properties": {
+        "Weight": 3.0,
+        "Volume": 0.8,
+        "Durability": 100,
+        "StackSize": 20,
+        "BasePrice": 50
+      },
+      "Attributes": {
+        "Hardness": 3,
+        "Purity": 0.9,
+        "MeltingPoint": 962
+      },
+      "ObtainMethods": [
+        {
+          "Method": "Mining",
+          "Location": ["HighMountains"],
+          "Difficulty": "Hard",
+          "RequiredTools": ["SteelPickaxe"],
+          "RequiredSkills": {
+            "Mining": 3
+          },
+          "YieldRange": {
+            "Min": 1,
+            "Max": 3,
+            "Average": 1.5
+          }
+        }
+      ],
+      "Usage": {
+        "CraftingMaterial": true,
+        "Consumable": false,
+        "Equipment": false,
+        "TradeGood": true,
+        "Currency": true
+      }
+    },
+    {
+      "ItemID": "Salt",
+      "Name": "盐晶",
+      "DisplayName": "盐晶",
+      "Description": "调味防腐材料，分布于盐碱湖泊",
+      "Category": "Mineral",
+      "SubCategory": "NonMetalMineral",
+      "Quality": {
+        "Base": "Common",
+        "Possible": ["Poor", "Common", "Fine"]
+      },
+      "Rarity": "Common",
+      "Properties": {
+        "Weight": 1.0,
+        "Volume": 1.0,
+        "Durability": 100,
+        "StackSize": 100,
+        "BasePrice": 5
+      },
+      "Attributes": {
+        "Purity": 0.8,
+        "PreservationEffect": 1.2
+      },
+      "ObtainMethods": [
+        {
+          "Method": "Evaporation",
+          "Location": ["SaltLakes"],
+          "Difficulty": "Easy",
+          "RequiredTools": ["EvaporationPan"],
+          "RequiredSkills": {
+            "SaltMaking": 1
+          },
+          "YieldRange": {
+            "Min": 5,
+            "Max": 15,
+            "Average": 10
+          }
+        }
+      ],
+      "Usage": {
+        "CraftingMaterial": true,
+        "Consumable": true,
+        "Equipment": false,
+        "TradeGood": true,
+        "FoodPreservation": true
+      }
+    },
+    {
+      "ItemID": "Saltpeter",
+      "Name": "硝石",
+      "DisplayName": "硝石",
+      "Description": "火药制作材料，分布于盐湖周边",
+      "Category": "Mineral",
+      "SubCategory": "FirearmMineral",
+      "Quality": {
+        "Base": "Common",
+        "Possible": ["Common", "Fine", "Superior"]
+      },
+      "Rarity": "Uncommon",
+      "Properties": {
+        "Weight": 1.5,
+        "Volume": 1.0,
+        "Durability": 100,
+        "StackSize": 50,
+        "BasePrice": 20
+      },
+      "Attributes": {
+        "Purity": 0.7,
+        "ExplosivePower": 1.0
+      },
+      "ObtainMethods": [
+        {
+          "Method": "Mining",
+          "Location": ["SaltLakes"],
+          "Difficulty": "Medium",
+          "RequiredTools": ["Pickaxe"],
+          "RequiredSkills": {
+            "Mining": 2
+          },
+          "YieldRange": {
+            "Min": 1,
+            "Max": 3,
+            "Average": 2
+          }
+        }
+      ],
+      "Usage": {
+        "CraftingMaterial": true,
+        "Consumable": false,
+        "Equipment": false,
+        "TradeGood": true,
+        "GunpowderMaking": true
+      }
+    },
+    {
+      "ItemID": "IronboneWood",
+      "Name": "铁骨木",
+      "DisplayName": "铁骨木",
+      "Description": "顶级硬木，生长于高山密林",
+      "Category": "Plant",
+      "SubCategory": "Wood",
+      "Quality": {
+        "Base": "Superior",
+        "Possible": ["Fine", "Superior", "Masterwork"]
+      },
+      "Rarity": "Rare",
+      "Properties": {
+        "Weight": 5.0,
+        "Volume": 2.0,
+        "Durability": 200,
+        "StackSize": 10,
+        "BasePrice": 100
+      },
+      "Attributes": {
+        "Hardness": 9,
+        "Flexibility": 0.3,
+        "DensityRating": 1.2
+      },
+      "ObtainMethods": [
+        {
+          "Method": "Logging",
+          "Location": ["HighMountains"],
+          "Difficulty": "Hard",
+          "RequiredTools": ["SteelAxe"],
+          "RequiredSkills": {
+            "Logging": 4
+          },
+          "YieldRange": {
+            "Min": 1,
+            "Max": 2,
+            "Average": 1.2
+          }
+        }
+      ],
+      "Usage": {
+        "CraftingMaterial": true,
+        "Consumable": false,
+        "Equipment": false,
+        "TradeGood": true,
+        "WeaponCrafting": true
+      },
+      "CraftingRecipes": [
+        {
+          "ResultItem": "CrossbowFrame",
+          "RequiredAmount": 1,
+          "RequiredFacility": "Carpentry",
+          "RequiredSkill": {
+            "Woodworking": 5
+          }
+        },
+        {
+          "ResultItem": "FirearmStock",
+          "RequiredAmount": 1,
+          "RequiredFacility": "Carpentry",
+          "RequiredSkill": {
+            "Woodworking": 6
+          }
+        }
+      ]
+    },
+    {
+      "ItemID": "Bamboo",
+      "Name": "竹材",
+      "DisplayName": "竹材",
+      "Description": "轻质材料，生长于河谷湿地",
+      "Category": "Plant",
+      "SubCategory": "Wood",
+      "Quality": {
+        "Base": "Common",
+        "Possible": ["Common", "Fine", "Superior"]
+      },
+      "Rarity": "Common",
+      "Properties": {
+        "Weight": 1.0,
+        "Volume": 1.5,
+        "Durability": 80,
+        "StackSize": 20,
+        "BasePrice": 8
+      },
+      "Attributes": {
+        "Hardness": 4,
+        "Flexibility": 0.8,
+        "DensityRating": 0.6
+      },
+      "ObtainMethods": [
+        {
+          "Method": "Harvesting",
+          "Location": ["RiverValleys", "Wetlands"],
+          "Difficulty": "Easy",
+          "RequiredTools": ["Knife"],
+          "RequiredSkills": {
+            "Gathering": 1
+          },
+          "YieldRange": {
+            "Min": 3,
+            "Max": 8,
+            "Average": 5
+          }
+        }
+      ],
+      "Usage": {
+        "CraftingMaterial": true,
+        "Consumable": false,
+        "Equipment": false,
+        "TradeGood": true,
+        "Construction": true
+      },
+      "CraftingRecipes": [
+        {
+          "ResultItem": "BambooBasket",
+          "RequiredAmount": 5,
+          "RequiredFacility": "Weaving",
+          "RequiredSkill": {
+            "Weaving": 2
+          }
+        },
+        {
+          "ResultItem": "BambooPaper",
+          "RequiredAmount": 10,
+          "RequiredFacility": "Papermaking",
+          "RequiredSkill": {
+            "Papermaking": 3
+          }
+        }
+      ]
+    },
+    {
+      "ItemID": "WildGinseng",
+      "Name": "野参",
+      "DisplayName": "野参",
+      "Description": "滋补圣品，生长于高山密林",
+      "Category": "Plant",
+      "SubCategory": "Herb",
+      "Quality": {
+        "Base": "Fine",
+        "Possible": ["Fine", "Superior", "Masterwork", "Legendary"]
+      },
+      "Rarity": "Rare",
+      "Properties": {
+        "Weight": 0.1,
+        "Volume": 0.1,
+        "Durability": 50,
+        "StackSize": 10,
+        "BasePrice": 200
+      },
+      "Attributes": {
+        "MedicinalPower": 1.5,
+        "VitalityBoost": 2.0,
+        "Age": 50
+      },
+      "ObtainMethods": [
+        {
+          "Method": "Gathering",
+          "Location": ["HighMountains"],
+          "Difficulty": "Very Hard",
+          "RequiredTools": ["HerbKnife"],
+          "RequiredSkills": {
+            "HerbGathering": 5
+          },
+          "YieldRange": {
+            "Min": 1,
+            "Max": 1,
+            "Average": 1
+          }
+        }
+      ],
+      "Usage": {
+        "CraftingMaterial": true,
+        "Consumable": true,
+        "Equipment": false,
+        "TradeGood": true,
+        "Medicine": true
+      },
+      "Effects": {
+        "HealthRestore": 50,
+        "VitalityBoost": 10,
+        "LifespanIncrease": 1
+      }
+    },
+    {
+      "ItemID": "Rice",
+      "Name": "稻谷",
+      "DisplayName": "稻谷",
+      "Description": "优质粮食，种植于中原水田",
+      "Category": "Plant",
+      "SubCategory": "Crop",
+      "Quality": {
+        "Base": "Common",
+        "Possible": ["Poor", "Common", "Fine", "Superior"]
+      },
+      "Rarity": "Common",
+      "Properties": {
+        "Weight": 0.5,
+        "Volume": 0.8,
+        "Durability": 100,
+        "StackSize": 100,
+        "BasePrice": 3
+      },
+      "Attributes": {
+        "NutritionalValue": 1.2,
+        "StorageLife": 365
+      },
+      "ObtainMethods": [
+        {
+          "Method": "Farming",
+          "Location": ["CentralPlains", "RiverValleys"],
+          "Difficulty": "Easy",
+          "RequiredTools": ["Sickle"],
+          "RequiredSkills": {
+            "Farming": 2
+          },
+          "YieldRange": {
+            "Min": 20,
+            "Max": 50,
+            "Average": 35
+          }
+        }
+      ],
+      "Usage": {
+        "CraftingMaterial": true,
+        "Consumable": true,
+        "Equipment": false,
+        "TradeGood": true,
+        "Food": true
+      },
+      "CraftingRecipes": [
+        {
+          "ResultItem": "CookedRice",
+          "RequiredAmount": 5,
+          "RequiredFacility": "Kitchen",
+          "RequiredSkill": {
+            "Cooking": 1
+          }
+        },
+        {
+          "ResultItem": "RiceWine",
+          "RequiredAmount": 20,
+          "RequiredFacility": "Brewery",
+          "RequiredSkill": {
+            "Brewing": 3
+          }
+        }
+      ]
+    },
+    {
+      "ItemID": "WarHorse",
+      "Name": "战马",
+      "DisplayName": "战马",
+      "Description": "军用坐骑，饲养于军营马场",
+      "Category": "Animal",
+      "SubCategory": "Livestock",
+      "Quality": {
+        "Base": "Fine",
+        "Possible": ["Common", "Fine", "Superior", "Masterwork"]
+      },
+      "Rarity": "Uncommon",
+      "Properties": {
+        "Weight": 500,
+        "Volume": 10,
+        "Durability": 100,
+        "StackSize": 1,
+        "BasePrice": 1000
+      },
+      "Attributes": {
+        "Speed": 8,
+        "Endurance": 7,
+        "Strength": 9,
+        "Intelligence": 6
+      },
+      "ObtainMethods": [
+        {
+          "Method": "Breeding",
+          "Location": ["NorthernSteppes"],
+          "Difficulty": "Hard",
+          "RequiredTools": ["Stable"],
+          "RequiredSkills": {
+            "AnimalHusbandry": 4
+          },
+          "YieldRange": {
+            "Min": 1,
+            "Max": 1,
+            "Average": 1
+          }
+        }
+      ],
+      "Usage": {
+        "CraftingMaterial": false,
+        "Consumable": false,
+        "Equipment": true,
+        "TradeGood": true,
+        "Transportation": true,
+        "Military": true
+      },
+      "Effects": {
+        "MovementSpeed": 3.0,
+        "CarryCapacity": 200,
+        "CombatBonus": 2.0
+      }
+    },
+    {
+      "ItemID": "SeaTurtle",
+      "Name": "海龟",
+      "DisplayName": "海龟",
+      "Description": "海洋巨兽，栖息于东海深水",
+      "Category": "Animal",
+      "SubCategory": "WildAnimal",
+      "Quality": {
+        "Base": "Fine",
+        "Possible": ["Fine", "Superior", "Masterwork"]
+      },
+      "Rarity": "Rare",
+      "Properties": {
+        "Weight": 200,
+        "Volume": 8,
+        "Durability": 150,
+        "StackSize": 1,
+        "BasePrice": 500
+      },
+      "Attributes": {
+        "ShellHardness": 8,
+        "MeatQuality": 1.3,
+        "Age": 100
+      },
+      "ObtainMethods": [
+        {
+          "Method": "Hunting",
+          "Location": ["EasternIslands"],
+          "Difficulty": "Very Hard",
+          "RequiredTools": ["Harpoon", "Net"],
+          "RequiredSkills": {
+            "Fishing": 5,
+            "Swimming": 4
+          },
+          "YieldRange": {
+            "Min": 1,
+            "Max": 1,
+            "Average": 1
+          }
+        }
+      ],
+      "Usage": {
+        "CraftingMaterial": true,
+        "Consumable": true,
+        "Equipment": false,
+        "TradeGood": true,
+        "Food": true
+      },
+      "CraftingRecipes": [
+        {
+          "ResultItem": "TurtleShell",
+          "RequiredAmount": 1,
+          "RequiredFacility": "Butchery",
+          "RequiredSkill": {
+            "Butchering": 3
+          }
+        },
+        {
+          "ResultItem": "TurtleMeat",
+          "RequiredAmount": 1,
+          "RequiredFacility": "Butchery",
+          "RequiredSkill": {
+            "Butchering": 2
+          }
+        }
+      ]
+    }
+  ],
+  "Categories": {
+    "Mineral": {
+      "MetalOre": ["IronOre", "CopperOre", "SilverOre", "TinOre", "LeadOre"],
+      "NonMetalMineral": ["Salt", "Limestone", "Clay", "Sulfur", "Coal", "Crystal"],
+      "FirearmMineral": ["Saltpeter", "Flint", "Magnetite", "Alum", "Graphite"]
+    },
+    "Plant": {
+      "Wood": ["IronboneWood", "HardWood", "PineWood", "Bamboo", "SandalWood", "WalnutWood"],
+      "Herb": ["WildGinseng", "GooseVine", "BitterGrass", "MudNailGrass", "SnowLotus", "Dendrobium", "Cactus", "PoisonGrass"],
+      "Crop": ["Rice", "Wheat", "Cotton", "MulberryLeaf", "Reed", "TeaLeaf"],
+      "Spice": ["SichuanPepper", "StarAnise", "Cinnamon"],
+      "Dye": ["IndigoGrass", "MadderRoot", "Gardenia"],
+      "Oil": ["Sesame", "Peanut", "Rapeseed"],
+      "Fiber": ["Ramie", "Flax", "Cotton"],
+      "FirearmPlant": ["SaltpeterGrass", "PineResin", "TungSeed", "RawLacquer"]
+    },
+    "Animal": {
+      "WildAnimal": ["Ape", "WildBoar", "Crane", "Wolf", "SnowWolf", "Python", "DesertFox", "SeaTurtle"],
+      "RegionalAnimal": ["WaterBuffalo", "BeltFish", "SnowLeopard", "Parrot", "Camel"],
+      "Livestock": ["Horse", "WarHorse", "Cattle", "Sheep", "Chicken", "Duck", "Silkworm", "Pigeon", "HuntingDog"],
+      "FirearmAnimal": ["EarthBee", "Beetle", "Pigeon", "PoisonSnake"]
+    },
+    "Food": {
+      "Staple": ["WheatFlour", "Rice", "GrainCake", "BambooRice", "MoonCake", "RiceCake"],
+      "Side": ["PickledVegetables", "SaltedMeat", "Tofu", "Honey", "Seaweed", "Cheese"],
+      "Beverage": ["WheatWine", "TeaLeaf", "FruitWine", "MedicinalWine", "MilkTea", "CoconutJuice"],
+      "Regional": ["FamilyBanquet", "PoetrySnacks", "SeafoodFeast", "BeltFishSoup", "RoastedLamb", "MaresMilkWine", "HundredFruitFeast", "DetoxSoup", "SpicedMeat", "OasisNectar"]
+    },
+    "Tool": {
+      "Writing": ["Brush", "InkStick", "XuanPaper", "Inkstone"],
+      "Crafting": ["IronHammer", "Saw", "Chisel", "Drill", "Plane", "Pliers"],
+      "Measuring": ["Ruler", "Scale", "WaterClock", "Compass", "LevelingInstrument", "Protractor"],
+      "Firearm": ["PowderGrinder", "BulletMold", "RopeStand", "BoringKnife", "PowderScale", "FireSteel"],
+      "Cultivation": ["RushMat", "Incense", "WoodenFish", "PrayerBeads", "CultivationBook", "TeaSet"]
+    },
+    "Entertainment": {
+      "Scholarly": ["CraneEyeStone", "JadePendant", "IncenseBurner", "Guqin", "FourTreasures", "FoldingFan", "Seal", "TeaCeremonySet"],
+      "Jade": ["WhiteJade", "GreenJade", "Jadeite", "Agate", "Crystal", "Amber", "Walnut", "BodhiSeed", "PurpleClayTeapot", "AncientCoin", "Bracelet", "SnuffBottle"],
+      "Cultivation": ["VirtueJade", "FiveVirtueStone", "MeditationBead", "CultivationBambooSlip", "PeaceJadePlaque", "CultivationAlbum", "Calligraphy", "Rubbing", "SealCollection", "AncientBook", "FanPainting", "ScrollPainting"],
+      "Firearm": ["SelfChimingClock", "Telescope", "Globe", "MechanicalBox", "FirecrackerArt", "AstronomicalInstrument"],
+      "FiveRealm": ["MedicineCauldron", "BronzeMirror", "MeditationOrb", "TalismanPaper", "Seal"],
+      "Games": ["Weiqi", "Xiangqi", "Dice", "PlayingCards", "Cuju", "Touhu", "SpinningTop", "Kite"],
+      "FirearmEntertainment": ["Firecracker", "MechanicalToy", "Telescope", "SelfChimingClock"]
+    }
+  },
+  "QualityLevels": ["Poor", "Common", "Fine", "Superior", "Masterwork", "Legendary", "Mythical"],
+  "RarityLevels": ["Common", "Uncommon", "Rare", "Epic", "Legendary", "Mythical"]
+}

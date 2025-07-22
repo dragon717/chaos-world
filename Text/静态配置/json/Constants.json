@@ -1,0 +1,42 @@
+{
+  "Version": "1.0.0",
+  "LastModified": "2024-01-01T00:00:00Z",
+  "GameConstants": {
+    "MaxLevel": 100,
+    "MaxSkillLevel": 10,
+    "MaxInventorySlots": 100,
+    "MaxPartySize": 6,
+    "BaseMovementSpeed": 5.0,
+    "BaseLearningRate": 1.0
+  },
+  "TimeConstants": {
+    "SecondsPerGameDay": 1440,
+    "DaysPerSeason": 90,
+    "SeasonsPerYear": 4,
+    "YearsPerEra": 100
+  },
+  "EconomicConstants": {
+    "BaseTaxRate": 0.1,
+    "InflationRate": 0.02,
+    "TradeMarkup": 0.15,
+    "MaxDebt": 10000
+  },
+  "CombatConstants": {
+    "BaseDamage": 10,
+    "CriticalChance": 0.05,
+    "CriticalMultiplier": 2.0,
+    "BaseAccuracy": 0.85
+  },
+  "CultivationConstants": {
+    "BaseVirtueGain": 1,
+    "BaseKnowledgeGain": 1,
+    "BaseExperienceGain": 1,
+    "RealmAdvancementThreshold": 1000
+  },
+  "WorldConstants": {
+    "MaxRegions": 20,
+    "MaxTribesPerRegion": 10,
+    "MaxCitiesPerRegion": 5,
+    "MaxPopulationPerCity": 1000000
+  }
+}

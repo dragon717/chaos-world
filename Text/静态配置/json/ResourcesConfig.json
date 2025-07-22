@@ -1,0 +1,635 @@
+{
+  "Version": "1.0.0",
+  "LastModified": "2024-01-01T00:00:00Z",
+  "ResourceCategories": [
+    {
+      "CategoryID": "PlantResources",
+      "Name": "植物资源类",
+      "DisplayName": "植物资源类",
+      "Description": "各类植物性资源",
+      "Subcategories": [
+        {
+          "SubcategoryID": "Crops",
+          "Name": "农作物",
+          "Resources": [
+            {
+              "ResourceID": "Rice",
+              "Name": "稻米",
+              "DisplayName": "稻米",
+              "Description": "水田主粮，温暖湿润环境生长",
+              "ResourceType": "Staple",
+              "GrowthEnvironment": {
+                "TerrainType": "Wetland",
+                "ClimateType": "WarmHumid",
+                "WaterRequirement": "High",
+                "SoilType": "Clay"
+              },
+              "GrowthCycle": {
+                "TotalDays": 135,
+                "Stages": [
+                  {"Stage": "Seedling", "Days": 30, "Description": "幼苗期"},
+                  {"Stage": "Tillering", "Days": 35, "Description": "分蘖期"},
+                  {"Stage": "Heading", "Days": 35, "Description": "抽穗期"},
+                  {"Stage": "Ripening", "Days": 35, "Description": "成熟期"}
+                ]
+              },
+              "Yield": {
+                "BaseYield": 450,
+                "YieldUnit": "kg/mu",
+                "QualityDistribution": {
+                  "Poor": 0.1,
+                  "Common": 0.6,
+                  "Fine": 0.25,
+                  "Superior": 0.05
+                }
+              },
+              "NutritionalValue": {
+                "Carbohydrates": 80,
+                "Protein": 8,
+                "Fat": 1,
+                "Fiber": 3,
+                "Calories": 365
+              },
+              "StorageProperties": {
+                "MaxStorageTime": 730,
+                "OptimalTemperature": 15,
+                "OptimalHumidity": 0.6,
+                "PestResistance": 0.7
+              },
+              "RegionalSuitability": {
+                "CentralPlains": 1.2,
+                "SouthernJungle": 1.1,
+                "EasternIslands": 1.3,
+                "WesternDesert": 0.3,
+                "NorthernSteppe": 0.4
+              },
+              "SeasonalModifiers": {
+                "Spring": {"PlantingBonus": 1.1},
+                "Summer": {"GrowthBonus": 1.2},
+                "Autumn": {"HarvestBonus": 1.3},
+                "Winter": {"StorageBonus": 1.1}
+              },
+              "MarketValue": {
+                "BasePrice": 2.0,
+                "PriceUnit": "per_kg",
+                "SeasonalVariation": {
+                  "Spring": 1.2,
+                  "Summer": 0.9,
+                  "Autumn": 0.8,
+                  "Winter": 1.1
+                }
+              }
+            },
+            {
+              "ResourceID": "Wheat",
+              "Name": "小麦",
+              "DisplayName": "小麦",
+              "Description": "旱地主粮，温带气候适宜",
+              "ResourceType": "Staple",
+              "GrowthEnvironment": {
+                "TerrainType": "Dryland",
+                "ClimateType": "Temperate",
+                "WaterRequirement": "Medium",
+                "SoilType": "Loam"
+              },
+              "GrowthCycle": {
+                "TotalDays": 200,
+                "PlantingSeason": "Autumn",
+                "HarvestSeason": "Summer"
+              },
+              "Yield": {
+                "BaseYield": 380,
+                "YieldUnit": "kg/mu"
+              },
+              "NutritionalValue": {
+                "Carbohydrates": 75,
+                "Protein": 12,
+                "Fat": 2,
+                "Fiber": 3,
+                "Calories": 340
+              },
+              "RegionalSuitability": {
+                "CentralPlains": 1.2,
+                "WesternDesert": 1.1,
+                "NorthernSteppe": 0.9
+              },
+              "MarketValue": {
+                "BasePrice": 2.4,
+                "PriceUnit": "per_kg"
+              },
+              "SpecialProperties": {
+                "FlourMaking": true,
+                "BreadSuitability": "High",
+                "TradeValue": "High"
+              }
+            },
+            {
+              "ResourceID": "Millet",
+              "Name": "粟米",
+              "DisplayName": "粟米",
+              "Description": "耐旱主粮，适应性强",
+              "ResourceType": "Staple",
+              "GrowthEnvironment": {
+                "TerrainType": "Dryland",
+                "ClimateType": "Arid",
+                "WaterRequirement": "Low",
+                "DroughtTolerance": "High"
+              },
+              "GrowthCycle": {
+                "TotalDays": 105,
+                "PlantingSeason": "Spring",
+                "HarvestSeason": "Autumn"
+              },
+              "RegionalSuitability": {
+                "NorthernSteppe": 1.3,
+                "WesternDesert": 1.1,
+                "MountainousRegions": 1.2
+              },
+              "SpecialProperties": {
+                "EmergencyFood": true,
+                "LongStorage": true,
+                "BorderRegionEssential": true
+              }
+            }
+          ]
+        },
+        {
+          "SubcategoryID": "WoodResources",
+          "Name": "木材资源",
+          "Resources": [
+            {
+              "ResourceID": "Bamboo",
+              "Name": "竹材",
+              "DisplayName": "竹材",
+              "Description": "轻质坚韧，用途广泛",
+              "ResourceType": "ConstructionMaterial",
+              "GrowthEnvironment": {
+                "TerrainType": "Hills",
+                "ClimateType": "Humid",
+                "GrowthRate": "Fast"
+              },
+              "Properties": {
+                "Weight": "Light",
+                "Strength": "High",
+                "Flexibility": "Excellent",
+                "WaterResistance": "Good"
+              },
+              "HarvestCycle": {
+                "MaturityTime": 1095,
+                "OptimalHarvestAge": "3-5years",
+                "RegenerationRate": "High"
+              },
+              "Applications": [
+                "Construction",
+                "Furniture",
+                "Tools",
+                "Crafts",
+                "Paper"
+              ],
+              "RegionalAvailability": {
+                "SouthernJungle": 1.5,
+                "CentralPlains": 1.2,
+                "EasternIslands": 1.1
+              }
+            },
+            {
+              "ResourceID": "Hardwood",
+              "Name": "硬木",
+              "DisplayName": "硬木",
+              "Description": "坚硬耐用的木材",
+              "ResourceType": "ConstructionMaterial",
+              "Properties": {
+                "Durability": "VeryHigh",
+                "Workability": "Difficult",
+                "Value": "High"
+              },
+              "HarvestCycle": {
+                "MaturityTime": 7300,
+                "OptimalHarvestAge": "20-30years"
+              }
+            }
+          ]
+        },
+        {
+          "SubcategoryID": "MedicinalPlants",
+          "Name": "药用植物",
+          "Resources": [
+            {
+              "ResourceID": "Ginseng",
+              "Name": "人参",
+              "DisplayName": "人参",
+              "Description": "珍贵药材，滋补强身",
+              "ResourceType": "Medicine",
+              "Rarity": "Rare",
+              "GrowthEnvironment": {
+                "TerrainType": "Forest",
+                "ClimateType": "Cool",
+                "ShadeTolerance": "High"
+              },
+              "MedicinalProperties": {
+                "HealthBonus": 50,
+                "EnergyBonus": 30,
+                "LongevityBonus": 10
+              },
+              "HarvestCycle": {
+                "MaturityTime": 2190,
+                "OptimalAge": "6-10years"
+              },
+              "MarketValue": {
+                "BasePrice": 500,
+                "PriceUnit": "per_root"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "CategoryID": "AnimalResources",
+      "Name": "动物资源类",
+      "DisplayName": "动物资源类",
+      "Description": "各类动物性资源",
+      "Subcategories": [
+        {
+          "SubcategoryID": "Livestock",
+          "Name": "家畜家禽",
+          "Resources": [
+            {
+              "ResourceID": "Cattle",
+              "Name": "牛",
+              "DisplayName": "牛",
+              "Description": "大型家畜，提供肉类、奶制品和劳力",
+              "ResourceType": "Livestock",
+              "LifeCycle": {
+                "Lifespan": 5475,
+                "MaturityAge": 730,
+                "ReproductionCycle": 365,
+                "OffspringCount": 1
+              },
+              "Products": [
+                {
+                  "ProductID": "BeefMeat",
+                  "Name": "牛肉",
+                  "Yield": 300,
+                  "Quality": "High",
+                  "NutritionalValue": {
+                    "Protein": 26,
+                    "Fat": 15,
+                    "Calories": 250
+                  }
+                },
+                {
+                  "ProductID": "CowMilk",
+                  "Name": "牛奶",
+                  "DailyYield": 15,
+                  "ProductionDuration": 300
+                },
+                {
+                  "ProductID": "CowHide",
+                  "Name": "牛皮",
+                  "Yield": 1,
+                  "Applications": ["Leather", "Armor", "Tools"]
+                }
+              ],
+              "LaborCapacity": {
+                "PlowingPower": 5.0,
+                "CarryingCapacity": 500,
+                "WorkHoursPerDay": 8
+              },
+              "MaintenanceRequirements": {
+                "DailyFeed": 25,
+                "WaterRequirement": 50,
+                "ShelterNeeded": true,
+                "VeterinaryCare": "Regular"
+              },
+              "RegionalSuitability": {
+                "CentralPlains": 1.3,
+                "SouthernJungle": 0.8,
+                "NorthernSteppe": 1.1
+              }
+            },
+            {
+              "ResourceID": "Chicken",
+              "Name": "鸡",
+              "DisplayName": "鸡",
+              "Description": "常见家禽，提供肉类和蛋类",
+              "ResourceType": "Poultry",
+              "LifeCycle": {
+                "Lifespan": 2555,
+                "MaturityAge": 180,
+                "EggLayingCycle": 1
+              },
+              "Products": [
+                {
+                  "ProductID": "ChickenMeat",
+                  "Name": "鸡肉",
+                  "Yield": 2,
+                  "NutritionalValue": {
+                    "Protein": 23,
+                    "Fat": 9,
+                    "Calories": 165
+                  }
+                },
+                {
+                  "ProductID": "ChickenEgg",
+                  "Name": "鸡蛋",
+                  "DailyYield": 0.8,
+                  "NutritionalValue": {
+                    "Protein": 13,
+                    "Fat": 11,
+                    "Calories": 155
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "SubcategoryID": "AquaticResources",
+          "Name": "水产资源",
+          "Resources": [
+            {
+              "ResourceID": "FreshwaterFish",
+              "Name": "淡水鱼",
+              "DisplayName": "淡水鱼",
+              "Description": "河湖中的鱼类资源",
+              "ResourceType": "Aquatic",
+              "Habitat": {
+                "WaterType": "Freshwater",
+                "DepthRange": "1-10m",
+                "TemperatureRange": "5-25C"
+              },
+              "FishingMethods": [
+                {
+                  "Method": "NetFishing",
+                  "Efficiency": 1.2,
+                  "RequiredSkill": "Fishing",
+                  "MinSkillLevel": 10
+                },
+                {
+                  "Method": "AngleFishing",
+                  "Efficiency": 0.8,
+                  "RequiredSkill": "Fishing",
+                  "MinSkillLevel": 5
+                }
+              ],
+              "SeasonalAvailability": {
+                "Spring": 1.1,
+                "Summer": 1.3,
+                "Autumn": 1.2,
+                "Winter": 0.6
+              },
+              "NutritionalValue": {
+                "Protein": 20,
+                "Fat": 8,
+                "Omega3": "High",
+                "Calories": 150
+              }
+            }
+          ]
+        },
+        {
+          "SubcategoryID": "WildAnimals",
+          "Name": "野生动物",
+          "Resources": [
+            {
+              "ResourceID": "Deer",
+              "Name": "鹿",
+              "DisplayName": "鹿",
+              "Description": "森林中的野生鹿类",
+              "ResourceType": "WildGame",
+              "Habitat": {
+                "TerrainType": "Forest",
+                "PopulationDensity": "Low",
+                "MigrationPattern": "Seasonal"
+              },
+              "HuntingRequirements": {
+                "RequiredSkill": "Hunting",
+                "MinSkillLevel": 25,
+                "RequiredWeapons": ["Bow", "Spear"],
+                "HuntingLicense": true
+              },
+              "Products": [
+                {
+                  "ProductID": "Venison",
+                  "Name": "鹿肉",
+                  "Yield": 80,
+                  "Quality": "Premium"
+                },
+                {
+                  "ProductID": "DeerHide",
+                  "Name": "鹿皮",
+                  "Yield": 1,
+                  "Quality": "Fine"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "CategoryID": "MineralResources",
+      "Name": "矿产资源类",
+      "DisplayName": "矿产资源类",
+      "Description": "各类矿物和金属资源",
+      "Subcategories": [
+        {
+          "SubcategoryID": "MetalOres",
+          "Name": "金属矿物",
+          "Resources": [
+            {
+              "ResourceID": "IronOre",
+              "Name": "铁矿石",
+              "DisplayName": "铁矿石",
+              "Description": "基础冶炼材料，分布于高山岭脊地区",
+              "ResourceType": "MetalOre",
+              "MiningLocations": [
+                {
+                  "LocationType": "HighMountains",
+                  "Abundance": "High",
+                  "QualityBonus": 0.2,
+                  "YieldBonus": 0.1
+                },
+                {
+                  "LocationType": "HillsideCliffs",
+                  "Abundance": "Medium",
+                  "QualityBonus": 0.1,
+                  "YieldBonus": 0.15
+                }
+              ],
+              "MiningRequirements": {
+                "RequiredSkill": "Mining",
+                "MinSkillLevel": 1,
+                "RequiredTools": ["Pickaxe"],
+                "SafetyEquipment": ["Helmet", "Gloves"]
+              },
+              "Properties": {
+                "Hardness": 6,
+                "Purity": 0.7,
+                "MeltingPoint": 1538,
+                "Density": 7.87
+              },
+              "YieldRange": {
+                "Min": 1,
+                "Max": 5,
+                "Average": 2.5,
+                "SkillModifier": 0.1
+              },
+              "ProcessingRequirements": {
+                "SmeltingFacility": "Furnace",
+                "RequiredSkill": "Smelting",
+                "MinSkillLevel": 2,
+                "FuelRequirement": "Charcoal",
+                "ProcessingRatio": 0.6
+              },
+              "SeasonalModifiers": {
+                "Spring": {"AvailabilityModifier": 1.0},
+                "Summer": {"AvailabilityModifier": 1.1},
+                "Autumn": {"AvailabilityModifier": 1.0},
+                "Winter": {"AvailabilityModifier": 0.8}
+              },
+              "MarketValue": {
+                "BasePrice": 10,
+                "PriceUnit": "per_kg",
+                "QualityMultiplier": {
+                  "Poor": 0.7,
+                  "Common": 1.0,
+                  "Fine": 1.5,
+                  "Superior": 2.2
+                }
+              }
+            },
+            {
+              "ResourceID": "CopperOre",
+              "Name": "铜矿石",
+              "DisplayName": "铜矿石",
+              "Description": "制作青铜和工具的重要材料",
+              "ResourceType": "MetalOre",
+              "Properties": {
+                "Hardness": 3,
+                "Conductivity": "High",
+                "Corrosion Resistance": "Good"
+              },
+              "Applications": [
+                "BronzeAlloy",
+                "Coins",
+                "Tools",
+                "Decorations"
+              ]
+            },
+            {
+              "ResourceID": "GoldOre",
+              "Name": "金矿石",
+              "DisplayName": "金矿石",
+              "Description": "珍贵金属，货币和装饰用",
+              "ResourceType": "PreciousMetal",
+              "Rarity": "Rare",
+              "Properties": {
+                "Purity": 0.9,
+                "Corrosion Resistance": "Excellent",
+                "Malleability": "Excellent"
+              },
+              "MarketValue": {
+                "BasePrice": 1000,
+                "PriceUnit": "per_gram"
+              }
+            }
+          ]
+        },
+        {
+          "SubcategoryID": "NonMetalMinerals",
+          "Name": "非金属矿物",
+          "Resources": [
+            {
+              "ResourceID": "Clay",
+              "Name": "黏土",
+              "DisplayName": "黏土",
+              "Description": "陶瓷制作和建筑材料",
+              "ResourceType": "NonMetal",
+              "MiningLocations": [
+                {
+                  "LocationType": "Riverbanks",
+                  "Abundance": "High",
+                  "Quality": "Good"
+                },
+                {
+                  "LocationType": "Wetlands",
+                  "Abundance": "Medium",
+                  "Quality": "Excellent"
+                }
+              ],
+              "Properties": {
+                "Plasticity": "High",
+                "FireResistance": "Good",
+                "WaterAbsorption": "Medium"
+              },
+              "Applications": [
+                "Pottery",
+                "Bricks",
+                "Tiles",
+                "Sculptures"
+              ],
+              "ProcessingRequirements": {
+                "CleaningProcess": "Required",
+                "DryingTime": 72,
+                "FiringTemperature": 1000
+              }
+            },
+            {
+              "ResourceID": "Jade",
+              "Name": "玉石",
+              "DisplayName": "玉石",
+              "Description": "珍贵宝石，文化价值极高",
+              "ResourceType": "Gemstone",
+              "Rarity": "Epic",
+              "Properties": {
+                "Hardness": 7,
+                "Translucency": "Good",
+                "CulturalValue": "VeryHigh"
+              },
+              "CulturalSignificance": {
+                "SymbolicMeaning": "Virtue",
+                "RitualUse": "High",
+                "StatusSymbol": "Elite"
+              },
+              "MarketValue": {
+                "BasePrice": 5000,
+                "PriceUnit": "per_piece",
+                "CulturalBonus": 2.0
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "ResourceManagement": {
+    "SustainabilityFactors": {
+      "RenewableResources": {
+        "RegenerationRate": "SpeciesDependent",
+        "OverharvestingPenalty": 0.5,
+        "ConservationBonus": 1.2
+      },
+      "NonRenewableResources": {
+        "DepletionRate": "ExtractionDependent",
+        "DepletionWarning": 0.2,
+        "AlternativeSourcesBonus": 1.1
+      }
+    },
+    "QualityFactors": {
+      "EnvironmentalConditions": 0.3,
+      "HarvestingSkill": 0.4,
+      "ToolQuality": 0.2,
+      "TimingOptimization": 0.1
+    },
+    "SeasonalEffects": {
+      "GlobalModifiers": {
+        "Spring": {"GrowthBonus": 1.2, "QualityBonus": 1.1},
+        "Summer": {"YieldBonus": 1.1, "HarvestEfficiency": 1.2},
+        "Autumn": {"HarvestBonus": 1.3, "StorageBonus": 1.1},
+        "Winter": {"PreservationBonus": 1.2, "AccessPenalty": 0.8}
+      }
+    }
+  }
+}

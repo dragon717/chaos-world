@@ -1,0 +1,627 @@
+{
+  "Version": "1.0.0",
+  "LastModified": "2024-01-01T00:00:00Z", 
+  "QualitySystem": {
+    "Levels": [
+      {
+        "QualityID": "Poor",
+        "Name": "粗劣",
+        "DisplayName": "粗劣",
+        "Level": 1,
+        "Color": "#808080",
+        "Modifiers": {
+          "DurabilityMultiplier": 0.7,
+          "EffectivenessMultiplier": 0.8,
+          "ValueMultiplier": 0.5
+        },
+        "Probability": 0.25,
+        "Description": "制作粗糙，品质较差"
+      },
+      {
+        "QualityID": "Common",
+        "Name": "普通",
+        "DisplayName": "普通",
+        "Level": 2,
+        "Color": "#FFFFFF",
+        "Modifiers": {
+          "DurabilityMultiplier": 1.0,
+          "EffectivenessMultiplier": 1.0,
+          "ValueMultiplier": 1.0
+        },
+        "Probability": 0.45,
+        "Description": "标准品质，符合基本要求"
+      },
+      {
+        "QualityID": "Fine",
+        "Name": "精良",
+        "DisplayName": "精良",
+        "Level": 3,
+        "Color": "#00FF00",
+        "Modifiers": {
+          "DurabilityMultiplier": 1.3,
+          "EffectivenessMultiplier": 1.2,
+          "ValueMultiplier": 1.5
+        },
+        "Probability": 0.2,
+        "Description": "制作精细，品质优良"
+      },
+      {
+        "QualityID": "Superior",
+        "Name": "卓越",
+        "DisplayName": "卓越",
+        "Level": 4,
+        "Color": "#0080FF",
+        "Modifiers": {
+          "DurabilityMultiplier": 1.6,
+          "EffectivenessMultiplier": 1.4,
+          "ValueMultiplier": 2.0
+        },
+        "Probability": 0.08,
+        "Description": "工艺卓越，性能出众"
+      },
+      {
+        "QualityID": "Masterwork",
+        "Name": "大师",
+        "DisplayName": "大师",
+        "Level": 5,
+        "Color": "#8000FF",
+        "Modifiers": {
+          "DurabilityMultiplier": 2.0,
+          "EffectivenessMultiplier": 1.7,
+          "ValueMultiplier": 3.0
+        },
+        "Probability": 0.015,
+        "Description": "大师之作，近乎完美"
+      },
+      {
+        "QualityID": "Legendary",
+        "Name": "传奇",
+        "DisplayName": "传奇",
+        "Level": 6,
+        "Color": "#FF8000",
+        "Modifiers": {
+          "DurabilityMultiplier": 2.5,
+          "EffectivenessMultiplier": 2.0,
+          "ValueMultiplier": 5.0
+        },
+        "Probability": 0.004,
+        "Description": "传奇品质，世间罕见"
+      },
+      {
+        "QualityID": "Mythical",
+        "Name": "神话",
+        "DisplayName": "神话",
+        "Level": 7,
+        "Color": "#FF0080",
+        "Modifiers": {
+          "DurabilityMultiplier": 3.0,
+          "EffectivenessMultiplier": 2.5,
+          "ValueMultiplier": 10.0
+        },
+        "Probability": 0.001,
+        "Description": "神话级别，超越凡俗"
+      }
+    ]
+  },
+  "RaritySystem": {
+    "Levels": [
+      {
+        "RarityID": "Common",
+        "Name": "常见",
+        "DisplayName": "常见",
+        "Level": 1,
+        "Color": "#FFFFFF",
+        "DropRate": 0.6,
+        "Description": "随处可见的普通物品"
+      },
+      {
+        "RarityID": "Uncommon",
+        "Name": "少见",
+        "DisplayName": "少见",
+        "Level": 2,
+        "Color": "#00FF00",
+        "DropRate": 0.25,
+        "Description": "较为稀少的物品"
+      },
+      {
+        "RarityID": "Rare",
+        "Name": "稀有",
+        "DisplayName": "稀有",
+        "Level": 3,
+        "Color": "#0080FF",
+        "DropRate": 0.1,
+        "Description": "稀有难得的珍贵物品"
+      },
+      {
+        "RarityID": "Epic",
+        "Name": "史诗",
+        "DisplayName": "史诗",
+        "Level": 4,
+        "Color": "#8000FF",
+        "DropRate": 0.04,
+        "Description": "史诗级别的稀世珍宝"
+      },
+      {
+        "RarityID": "Legendary",
+        "Name": "传奇",
+        "DisplayName": "传奇",
+        "Level": 5,
+        "Color": "#FF8000",
+        "DropRate": 0.009,
+        "Description": "传说中的神器"
+      },
+      {
+        "RarityID": "Mythical",
+        "Name": "神话",
+        "DisplayName": "神话",
+        "Level": 6,
+        "Color": "#FF0080",
+        "DropRate": 0.001,
+        "Description": "神话传说中的至宝"
+      }
+    ]
+  },
+  "CultivationSystem": {
+    "Realms": [
+      {
+        "RealmID": "Mortal",
+        "Name": "凡人境",
+        "DisplayName": "凡人境",
+        "Level": 0,
+        "RequiredExperience": 0,
+        "Attributes": {
+          "HealthMultiplier": 1.0,
+          "StaminaMultiplier": 1.0,
+          "StrengthMultiplier": 1.0,
+          "IntelligenceMultiplier": 1.0,
+          "WisdomMultiplier": 1.0,
+          "CharismaMultiplier": 1.0
+        },
+        "Abilities": [],
+        "Lifespan": 80,
+        "Description": "普通人类，未开始修身之路"
+      },
+      {
+        "RealmID": "Enlightened",
+        "Name": "开悟境",
+        "DisplayName": "开悟境",
+        "Level": 1,
+        "RequiredExperience": 1000,
+        "Attributes": {
+          "HealthMultiplier": 1.2,
+          "StaminaMultiplier": 1.3,
+          "StrengthMultiplier": 1.1,
+          "IntelligenceMultiplier": 1.4,
+          "WisdomMultiplier": 1.5,
+          "CharismaMultiplier": 1.2
+        },
+        "Abilities": ["BasicMeditation", "EnhancedLearning"],
+        "Lifespan": 120,
+        "Description": "初步觉醒，开始理解天地之理"
+      },
+      {
+        "RealmID": "Transcendent",
+        "Name": "超凡境",
+        "DisplayName": "超凡境",
+        "Level": 2,
+        "RequiredExperience": 5000,
+        "Attributes": {
+          "HealthMultiplier": 1.5,
+          "StaminaMultiplier": 1.6,
+          "StrengthMultiplier": 1.4,
+          "IntelligenceMultiplier": 1.7,
+          "WisdomMultiplier": 2.0,
+          "CharismaMultiplier": 1.5
+        },
+        "Abilities": ["EnergyManipulation", "EnhancedSenses", "MinorHealing"],
+        "Lifespan": 200,
+        "Description": "超越凡俗，掌握基本的超自然能力"
+      },
+      {
+        "RealmID": "Sage",
+        "Name": "圣贤境",
+        "DisplayName": "圣贤境",
+        "Level": 3,
+        "RequiredExperience": 20000,
+        "Attributes": {
+          "HealthMultiplier": 2.0,
+          "StaminaMultiplier": 2.2,
+          "StrengthMultiplier": 1.8,
+          "IntelligenceMultiplier": 2.5,
+          "WisdomMultiplier": 3.0,
+          "CharismaMultiplier": 2.0
+        },
+        "Abilities": ["WisdomAura", "MajorHealing", "ElementalControl", "Prophecy"],
+        "Lifespan": 500,
+        "Description": "智慧圆满，德行高尚，能够指导他人"
+      },
+      {
+        "RealmID": "Immortal",
+        "Name": "仙人境",
+        "DisplayName": "仙人境",
+        "Level": 4,
+        "RequiredExperience": 100000,
+        "Attributes": {
+          "HealthMultiplier": 3.0,
+          "StaminaMultiplier": 3.5,
+          "StrengthMultiplier": 2.5,
+          "IntelligenceMultiplier": 3.5,
+          "WisdomMultiplier": 4.0,
+          "CharismaMultiplier": 3.0
+        },
+        "Abilities": ["Immortality", "Flight", "WeatherControl", "Resurrection", "TimeManipulation"],
+        "Lifespan": 10000,
+        "Description": "超脱生死，与天地同寿，拥有强大神通"
+      },
+      {
+        "RealmID": "Celestial",
+        "Name": "天人境",
+        "DisplayName": "天人境",
+        "Level": 5,
+        "RequiredExperience": 1000000,
+        "Attributes": {
+          "HealthMultiplier": 5.0,
+          "StaminaMultiplier": 5.0,
+          "StrengthMultiplier": 4.0,
+          "IntelligenceMultiplier": 5.0,
+          "WisdomMultiplier": 6.0,
+          "CharismaMultiplier": 5.0
+        },
+        "Abilities": ["RealityManipulation", "FateControl", "UniversalKnowledge", "CreationPower", "CosmicAwareness"],
+        "Lifespan": -1,
+        "Description": "与天道合一，掌控自然法则，永恒不朽"
+      }
+    ],
+    "ExperienceGain": {
+      "Meditation": {
+        "BaseGain": 10,
+        "QualityMultiplier": {
+          "Poor": 0.5,
+          "Common": 1.0,
+          "Fine": 1.5,
+          "Superior": 2.0,
+          "Masterwork": 3.0
+        }
+      },
+      "GoodDeeds": {
+        "BaseGain": 50,
+        "ImpactMultiplier": {
+          "Minor": 1.0,
+          "Moderate": 2.0,
+          "Major": 5.0,
+          "Legendary": 10.0
+        }
+      },
+      "KnowledgeAcquisition": {
+        "BaseGain": 25,
+        "ComplexityMultiplier": {
+          "Basic": 1.0,
+          "Intermediate": 2.0,
+          "Advanced": 4.0,
+          "Master": 8.0
+        }
+      }
+    }
+  },
+  "FirearmEra": {
+    "TechnologyLevels": [
+      {
+        "TechID": "EarlyFirearms",
+        "Name": "火器初兴",
+        "DisplayName": "火器初兴",
+        "Level": 1,
+        "RequiredResearch": 100,
+        "UnlockedItems": ["HandCannon", "BasicGunpowder", "SimpleBomb"],
+        "Description": "火器技术的萌芽阶段"
+      },
+      {
+        "TechID": "ImprovedFirearms",
+        "Name": "火器改良",
+        "DisplayName": "火器改良",
+        "Level": 2,
+        "RequiredResearch": 500,
+        "UnlockedItems": ["Musket", "ImprovedGunpowder", "Grenade"],
+        "Description": "火器技术的发展阶段"
+      },
+      {
+        "TechID": "AdvancedFirearms",
+        "Name": "火器精进",
+        "DisplayName": "火器精进",
+        "Level": 3,
+        "RequiredResearch": 2000,
+        "UnlockedItems": ["Rifle", "Artillery", "RocketArrow"],
+        "Description": "火器技术的成熟阶段"
+      }
+    ],
+    "ResearchFields": [
+      {
+        "FieldID": "Metallurgy",
+        "Name": "冶金学",
+        "Description": "金属加工和合金技术",
+        "Applications": ["WeaponCrafting", "ToolMaking", "Construction"]
+      },
+      {
+        "FieldID": "Chemistry",
+        "Name": "炼金术",
+        "Description": "化学反应和材料合成",
+        "Applications": ["GunpowderMaking", "Medicine", "Preservation"]
+      },
+      {
+        "FieldID": "Engineering",
+        "Name": "机械学",
+        "Description": "机械设计和制造技术",
+        "Applications": ["Artillery", "Clockwork", "Transportation"]
+      },
+      {
+        "FieldID": "Optics",
+        "Name": "光学",
+        "Description": "光学原理和器械制造",
+        "Applications": ["Telescope", "Microscope", "Navigation"]
+      }
+    ]
+  },
+  "SeasonalSystem": {
+    "Seasons": [
+      {
+        "SeasonID": "Spring",
+        "Name": "春季",
+        "DisplayName": "春季",
+        "Duration": 90,
+        "WeatherPatterns": ["Mild", "Rainy", "Windy"],
+        "GlobalModifiers": {
+          "PlantGrowth": 1.5,
+          "AnimalActivity": 1.2,
+          "TravelSpeed": 1.0,
+          "ConstructionSpeed": 1.1
+        },
+        "RegionalModifiers": {
+          "CentralPlains": {
+            "CropYield": 1.3,
+            "WaterAvailability": 1.2
+          },
+          "EasternIslands": {
+            "FishingYield": 1.1,
+            "StormRisk": 0.8
+          },
+          "NorthernSteppes": {
+            "GrassGrowth": 1.4,
+            "AnimalMigration": 1.0
+          },
+          "SouthernJungles": {
+            "HerbGrowth": 1.6,
+            "DiseaseRisk": 1.2
+          },
+          "WesternDeserts": {
+            "OasisProductivity": 1.2,
+            "SandstormRisk": 0.7
+          }
+        },
+        "Description": "万物复苏的季节，适合播种和建设"
+      },
+      {
+        "SeasonID": "Summer",
+        "Name": "夏季",
+        "DisplayName": "夏季",
+        "Duration": 90,
+        "WeatherPatterns": ["Hot", "Humid", "Stormy"],
+        "GlobalModifiers": {
+          "PlantGrowth": 2.0,
+          "AnimalActivity": 1.5,
+          "TravelSpeed": 0.9,
+          "ConstructionSpeed": 0.8
+        },
+        "RegionalModifiers": {
+          "CentralPlains": {
+            "CropYield": 1.5,
+            "WaterConsumption": 1.3
+          },
+          "EasternIslands": {
+            "FishingYield": 1.3,
+            "StormRisk": 1.5
+          },
+          "NorthernSteppes": {
+            "GrassGrowth": 1.2,
+            "HeatStress": 1.1
+          },
+          "SouthernJungles": {
+            "HerbGrowth": 2.0,
+            "DiseaseRisk": 1.5
+          },
+          "WesternDeserts": {
+            "HeatDanger": 1.8,
+            "WaterScarcity": 1.4
+          }
+        },
+        "Description": "炎热的季节，植物茂盛但旅行困难"
+      },
+      {
+        "SeasonID": "Autumn",
+        "Name": "秋季",
+        "DisplayName": "秋季",
+        "Duration": 90,
+        "WeatherPatterns": ["Cool", "Dry", "Clear"],
+        "GlobalModifiers": {
+          "PlantGrowth": 0.8,
+          "AnimalActivity": 1.3,
+          "TravelSpeed": 1.2,
+          "ConstructionSpeed": 1.3
+        },
+        "RegionalModifiers": {
+          "CentralPlains": {
+            "HarvestYield": 1.8,
+            "StorageEfficiency": 1.2
+          },
+          "EasternIslands": {
+            "FishingYield": 1.4,
+            "StormRisk": 0.6
+          },
+          "NorthernSteppes": {
+            "HuntingYield": 1.5,
+            "AnimalMigration": 1.3
+          },
+          "SouthernJungles": {
+            "FruitHarvest": 1.7,
+            "DiseaseRisk": 0.8
+          },
+          "WesternDeserts": {
+            "TravelConditions": 1.3,
+            "TradeActivity": 1.4
+          }
+        },
+        "Description": "收获的季节，适合贸易和建设"
+      },
+      {
+        "SeasonID": "Winter",
+        "Name": "冬季",
+        "DisplayName": "冬季",
+        "Duration": 90,
+        "WeatherPatterns": ["Cold", "Snowy", "Harsh"],
+        "GlobalModifiers": {
+          "PlantGrowth": 0.2,
+          "AnimalActivity": 0.7,
+          "TravelSpeed": 0.7,
+          "ConstructionSpeed": 0.6
+        },
+        "RegionalModifiers": {
+          "CentralPlains": {
+            "FuelConsumption": 1.5,
+            "IndoorActivity": 1.3
+          },
+          "EasternIslands": {
+            "FishingYield": 0.8,
+            "StormRisk": 1.2
+          },
+          "NorthernSteppes": {
+            "SurvivalDifficulty": 1.8,
+            "AnimalMortality": 1.3
+          },
+          "SouthernJungles": {
+            "DrySeasonEffect": 1.2,
+            "WaterScarcity": 1.1
+          },
+          "WesternDeserts": {
+            "ColdNights": 1.4,
+            "TravelDifficulty": 1.2
+          }
+        },
+        "Description": "严寒的季节，需要储备和保暖"
+      }
+    ],
+    "CycleDuration": 360,
+    "TimeAcceleration": 1.0
+  },
+  "RegionalBonuses": {
+    "CentralPlains": {
+      "Agriculture": 0.3,
+      "Crafting": 0.2,
+      "Education": 0.25,
+      "Trade": 0.15
+    },
+    "EasternIslands": {
+      "Fishing": 0.4,
+      "Navigation": 0.3,
+      "SaltMaking": 0.35,
+      "Shipbuilding": 0.25
+    },
+    "NorthernSteppes": {
+      "AnimalHusbandry": 0.4,
+      "Riding": 0.35,
+      "Hunting": 0.3,
+      "Leatherwork": 0.25
+    },
+    "SouthernJungles": {
+      "Herbalism": 0.5,
+      "Survival": 0.4,
+      "Stealth": 0.3,
+      "Toxicology": 0.35
+    },
+    "WesternDeserts": {
+      "Trading": 0.4,
+      "Diplomacy": 0.3,
+      "Appraisal": 0.35,
+      "Languages": 0.25
+    }
+  },
+  "ReputationSystem": {
+    "Factions": [
+      {
+        "FactionID": "Scholars",
+        "Name": "学者派",
+        "Description": "追求知识和智慧的学者群体",
+        "Values": ["Knowledge", "Wisdom", "Research"],
+        "ReputationLevels": [
+          {"Level": -5, "Name": "学术敌人", "Benefits": [], "Penalties": ["KnowledgeAccess"]},
+          {"Level": -3, "Name": "不受欢迎", "Benefits": [], "Penalties": ["BookAccess"]},
+          {"Level": 0, "Name": "中立", "Benefits": [], "Penalties": []},
+          {"Level": 3, "Name": "受尊敬", "Benefits": ["BookDiscount"], "Penalties": []},
+          {"Level": 5, "Name": "学术权威", "Benefits": ["FreeResearch", "TeachingOpportunity"], "Penalties": []}
+        ]
+      },
+      {
+        "FactionID": "Merchants",
+        "Name": "商人联盟",
+        "Description": "追求财富和贸易的商人群体",
+        "Values": ["Wealth", "Trade", "Profit"],
+        "ReputationLevels": [
+          {"Level": -5, "Name": "商业敌人", "Benefits": [], "Penalties": ["TradeAccess"]},
+          {"Level": -3, "Name": "不受信任", "Benefits": [], "Penalties": ["HighPrices"]},
+          {"Level": 0, "Name": "中立", "Benefits": [], "Penalties": []},
+          {"Level": 3, "Name": "可信伙伴", "Benefits": ["TradeDiscount"], "Penalties": []},
+          {"Level": 5, "Name": "商业大亨", "Benefits": ["ExclusiveDeals", "InvestmentOpportunity"], "Penalties": []}
+        ]
+      },
+      {
+        "FactionID": "Cultivators",
+        "Name": "修身者",
+        "Description": "追求修身和超越的修行者群体",
+        "Values": ["Virtue", "Transcendence", "Harmony"],
+        "ReputationLevels": [
+          {"Level": -5, "Name": "道德败坏", "Benefits": [], "Penalties": ["SpiritualGuidance"]},
+          {"Level": -3, "Name": "品行不端", "Benefits": [], "Penalties": ["TempleBan"]},
+          {"Level": 0, "Name": "中立", "Benefits": [], "Penalties": []},
+          {"Level": 3, "Name": "品德高尚", "Benefits": ["SpiritualGuidance"], "Penalties": []},
+          {"Level": 5, "Name": "道德楷模", "Benefits": ["EnlightenmentBonus", "DiscipleGathering"], "Penalties": []}
+        ]
+      }
+    ]
+  },
+  "GameBalance": {
+    "DifficultySettings": {
+      "Easy": {
+        "ResourceMultiplier": 1.5,
+        "ExperienceMultiplier": 1.3,
+        "DamageReduction": 0.7,
+        "SkillLearningSpeed": 1.4
+      },
+      "Normal": {
+        "ResourceMultiplier": 1.0,
+        "ExperienceMultiplier": 1.0,
+        "DamageReduction": 1.0,
+        "SkillLearningSpeed": 1.0
+      },
+      "Hard": {
+        "ResourceMultiplier": 0.7,
+        "ExperienceMultiplier": 0.8,
+        "DamageReduction": 1.3,
+        "SkillLearningSpeed": 0.7
+      },
+      "Expert": {
+        "ResourceMultiplier": 0.5,
+        "ExperienceMultiplier": 0.6,
+        "DamageReduction": 1.6,
+        "SkillLearningSpeed": 0.5
+      }
+    },
+    "EconomicBalance": {
+      "InflationRate": 0.02,
+      "TradeVolumeMultiplier": 1.0,
+      "TaxRate": 0.1,
+      "WealthDistribution": {
+        "Poor": 0.6,
+        "Middle": 0.3,
+        "Rich": 0.09,
+        "Elite": 0.01
+      }
+    }
+  }
+}

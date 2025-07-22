@@ -1,0 +1,460 @@
+{
+  "Version": "1.0.0",
+  "LastModified": "2024-01-01T00:00:00Z",
+  "Regions": [
+    {
+      "RegionID": "CentralPlains",
+      "Name": "中原农桑之地",
+      "DisplayName": "中原农桑之地",
+      "Description": "大河滋养的肥沃平原，稻田桑园遍布，村镇星罗棋布",
+      "RegionType": "Agricultural",
+      "Climate": {
+        "Type": "Temperate",
+        "Temperature": {
+          "Spring": 18,
+          "Summer": 28,
+          "Autumn": 20,
+          "Winter": 5
+        },
+        "Rainfall": {
+          "Spring": 120,
+          "Summer": 180,
+          "Autumn": 100,
+          "Winter": 40
+        },
+        "Disasters": ["Flood", "Drought"]
+      },
+      "Terrain": {
+        "Primary": "Plains",
+        "Secondary": ["River", "Hills"],
+        "Elevation": {
+          "Min": 0,
+          "Max": 200,
+          "Average": 50
+        }
+      },
+      "Resources": {
+        "Primary": ["Rice", "Silk", "Clay"],
+        "Secondary": ["Bamboo", "FreshwaterFish"],
+        "Rare": ["Jade", "GoldSand"]
+      },
+      "Population": {
+        "Total": 25000000,
+        "Density": "High",
+        "MainTribes": ["HanMajority", "HakkaMinority"]
+      },
+      "Culture": {
+        "Dominant": "Confucian",
+        "Traditions": ["PoetryGathering", "ClanRitual", "MidAutumnFestival"],
+        "Values": ["Education", "Harmony", "Tradition"]
+      },
+      "Economy": {
+        "Primary": "Agriculture",
+        "Secondary": ["Handicraft", "Trade"],
+        "TradeRoutes": ["GrandCanal", "SilkRoad"]
+      },
+      "Modifiers": {
+        "CropYield": 1.2,
+        "CraftQuality": 1.1,
+        "CulturalInfluence": 1.3,
+        "TechProgress": 1.0
+      },
+      "SeasonalEffects": {
+        "Spring": {
+          "PlantGrowth": 1.2,
+          "CultivationBonus": 0.15
+        },
+        "Summer": {
+          "HarvestYield": 1.1,
+          "DisasterRisk": 1.3
+        },
+        "Autumn": {
+          "HarvestYield": 1.3,
+          "CulturalActivity": 1.2
+        },
+        "Winter": {
+          "CraftActivity": 1.1,
+          "StudyBonus": 1.15
+        }
+      }
+    },
+    {
+      "RegionID": "EasternIslands",
+      "Name": "东海诸岛渔盐之乡",
+      "DisplayName": "东海诸岛渔盐之乡",
+      "Description": "神秘岛屿群，珊瑚礁环绕，海湾港口天然",
+      "RegionType": "Maritime",
+      "Climate": {
+        "Type": "Oceanic",
+        "Temperature": {
+          "Spring": 20,
+          "Summer": 26,
+          "Autumn": 22,
+          "Winter": 12
+        },
+        "Rainfall": {
+          "Spring": 150,
+          "Summer": 200,
+          "Autumn": 180,
+          "Winter": 80
+        },
+        "Disasters": ["Typhoon", "Tsunami"]
+      },
+      "Terrain": {
+        "Primary": "Islands",
+        "Secondary": ["Coast", "Reef"],
+        "Elevation": {
+          "Min": 0,
+          "Max": 300,
+          "Average": 80
+        }
+      },
+      "Resources": {
+        "Primary": ["SeaSalt", "Coral", "SeaFish"],
+        "Secondary": ["Seaweed", "Shells", "Pearls"],
+        "Rare": ["NightGlowFish", "SeaTurtle", "RareCoral"]
+      },
+      "Population": {
+        "Total": 3000000,
+        "Density": "Medium",
+        "MainTribes": ["IslandFishermen", "PearlDivers"]
+      },
+      "Culture": {
+        "Dominant": "SeaGod",
+        "Traditions": ["SeaFestival", "TreasureHunt", "ShipBuilding"],
+        "Values": ["Adventure", "Innovation", "Courage"]
+      },
+      "Economy": {
+        "Primary": "Fishing",
+        "Secondary": ["SaltMaking", "PearlDiving"],
+        "TradeRoutes": ["SeaRoute", "IslandChain"]
+      },
+      "Modifiers": {
+        "FishingYield": 1.4,
+        "SaltQuality": 1.3,
+        "NavigationSkill": 1.5,
+        "TechInnovation": 1.2
+      },
+      "SeasonalEffects": {
+        "Spring": {
+          "FishingYield": 1.2,
+          "ExplorationBonus": 0.1
+        },
+        "Summer": {
+          "SaltProduction": 1.4,
+          "TyphoonRisk": 1.5
+        },
+        "Autumn": {
+          "PearlDiving": 1.3,
+          "TradeActivity": 1.2
+        },
+        "Winter": {
+          "CraftActivity": 1.2,
+          "StormRisk": 1.1
+        }
+      }
+    },
+    {
+      "RegionID": "NorthernSteppes",
+      "Name": "北疆游牧部族",
+      "DisplayName": "北疆游牧部族",
+      "Description": "雪山草原，地势开阔，河流稀少，冬季严寒",
+      "RegionType": "Nomadic",
+      "Climate": {
+        "Type": "Continental",
+        "Temperature": {
+          "Spring": 8,
+          "Summer": 22,
+          "Autumn": 10,
+          "Winter": -15
+        },
+        "Rainfall": {
+          "Spring": 60,
+          "Summer": 80,
+          "Autumn": 40,
+          "Winter": 20
+        },
+        "Disasters": ["Blizzard", "Drought"]
+      },
+      "Terrain": {
+        "Primary": "Grassland",
+        "Secondary": ["Mountains", "River"],
+        "Elevation": {
+          "Min": 800,
+          "Max": 3000,
+          "Average": 1500
+        }
+      },
+      "Resources": {
+        "Primary": ["Horses", "Cattle", "Sheep"],
+        "Secondary": ["WolfPelt", "IceFlower", "DairyProducts"],
+        "Rare": ["SnowLeopard", "RareHerbs", "PreciousFur"]
+      },
+      "Population": {
+        "Total": 5000000,
+        "Density": "Low",
+        "MainTribes": ["HorseTribes", "SheepTribes", "SnowMountainTribes"]
+      },
+      "Culture": {
+        "Dominant": "Shamanism",
+        "Traditions": ["TribalGathering", "HorseRacing", "AncestorWorship"],
+        "Values": ["Freedom", "Strength", "Honor"]
+      },
+      "Economy": {
+        "Primary": "Herding",
+        "Secondary": ["Hunting", "FurTrading"],
+        "TradeRoutes": ["GrasslandPath", "MountainPass"]
+      },
+      "Modifiers": {
+        "AnimalHusbandry": 1.5,
+        "RidingSkill": 1.6,
+        "ColdResistance": 1.4,
+        "MobilityBonus": 1.3
+      },
+      "SeasonalEffects": {
+        "Spring": {
+          "AnimalBreeding": 1.3,
+          "MigrationBonus": 0.2
+        },
+        "Summer": {
+          "GrazingYield": 1.4,
+          "TribalGathering": 1.2
+        },
+        "Autumn": {
+          "HuntingYield": 1.3,
+          "PreparationBonus": 1.1
+        },
+        "Winter": {
+          "SurvivalChallenge": 1.5,
+          "CraftActivity": 1.2
+        }
+      }
+    },
+    {
+      "RegionID": "SouthernJungles",
+      "Name": "南蛮丛林秘境",
+      "DisplayName": "南蛮丛林秘境",
+      "Description": "热带雨林，古城遗迹，河流纵横，瘴气弥漫",
+      "RegionType": "Forest",
+      "Climate": {
+        "Type": "Tropical",
+        "Temperature": {
+          "Spring": 28,
+          "Summer": 32,
+          "Autumn": 30,
+          "Winter": 25
+        },
+        "Rainfall": {
+          "Spring": 200,
+          "Summer": 300,
+          "Autumn": 250,
+          "Winter": 150
+        },
+        "Disasters": ["Flood", "Plague"]
+      },
+      "Terrain": {
+        "Primary": "Rainforest",
+        "Secondary": ["River", "Ruins"],
+        "Elevation": {
+          "Min": 0,
+          "Max": 800,
+          "Average": 200
+        }
+      },
+      "Resources": {
+        "Primary": ["TropicalWood", "ExoticFruits", "Herbs"],
+        "Secondary": ["PoisonousInsects", "GlowMushrooms", "VineRopes"],
+        "Rare": ["AncientArtifacts", "RarePoisons", "MysticalPlants"]
+      },
+      "Population": {
+        "Total": 2000000,
+        "Density": "Low",
+        "MainTribes": ["JungleHunters", "HerbGatherers", "TreeDwellers"]
+      },
+      "Culture": {
+        "Dominant": "Animism",
+        "Traditions": ["TribalDance", "SacredRituals", "ExplorationRites"],
+        "Values": ["Mystery", "Survival", "Harmony"]
+      },
+      "Economy": {
+        "Primary": "Gathering",
+        "Secondary": ["Hunting", "HerbTrade"],
+        "TradeRoutes": ["RiverPath", "JungleTrail"]
+      },
+      "Modifiers": {
+        "HerbGathering": 1.5,
+        "PoisonResistance": 1.4,
+        "JungleSurvival": 1.6,
+        "MysticalKnowledge": 1.3
+      },
+      "SeasonalEffects": {
+        "Spring": {
+          "PlantGrowth": 1.4,
+          "HerbQuality": 1.2
+        },
+        "Summer": {
+          "ExplorationDifficulty": 1.3,
+          "DiseaseRisk": 1.4
+        },
+        "Autumn": {
+          "FruitHarvest": 1.5,
+          "ArtifactDiscovery": 1.1
+        },
+        "Winter": {
+          "CraftActivity": 1.2,
+          "RitualActivity": 1.3
+        }
+      }
+    },
+    {
+      "RegionID": "WesternDeserts",
+      "Name": "西域商贾通衢",
+      "DisplayName": "西域商贾通衢",
+      "Description": "广袤沙漠，绿洲点缀，商道纵横，驼铃声声",
+      "RegionType": "Desert",
+      "Climate": {
+        "Type": "Arid",
+        "Temperature": {
+          "Spring": 25,
+          "Summer": 40,
+          "Autumn": 28,
+          "Winter": 10
+        },
+        "Rainfall": {
+          "Spring": 20,
+          "Summer": 10,
+          "Autumn": 15,
+          "Winter": 30
+        },
+        "Disasters": ["Sandstorm", "Drought"]
+      },
+      "Terrain": {
+        "Primary": "Desert",
+        "Secondary": ["Oasis", "Dunes"],
+        "Elevation": {
+          "Min": 200,
+          "Max": 1500,
+          "Average": 600
+        }
+      },
+      "Resources": {
+        "Primary": ["Spices", "Gems", "Camels"],
+        "Secondary": ["Cactus", "ExoticTextiles", "SandGold"],
+        "Rare": ["PreciousStones", "RareSpices", "DesertTreasures"]
+      },
+      "Population": {
+        "Total": 4000000,
+        "Density": "Low",
+        "MainTribes": ["DesertMerchants", "OasisGuardians", "CaravanTraders"]
+      },
+      "Culture": {
+        "Dominant": "Polytheistic",
+        "Traditions": ["CaravanFestival", "OasisCelebration", "DesertLegends"],
+        "Values": ["Trade", "Hospitality", "Endurance"]
+      },
+      "Economy": {
+        "Primary": "Trade",
+        "Secondary": ["SpiceGathering", "GemMining"],
+        "TradeRoutes": ["SilkRoad", "SpiceRoute", "CaravanPath"]
+      },
+      "Modifiers": {
+        "TradeProfit": 1.4,
+        "DesertSurvival": 1.5,
+        "SpiceQuality": 1.3,
+        "NavigationSkill": 1.2
+      },
+      "SeasonalEffects": {
+        "Spring": {
+          "TradeActivity": 1.3,
+          "OasisProductivity": 1.2
+        },
+        "Summer": {
+          "TravelDifficulty": 1.5,
+          "WaterConsumption": 1.4
+        },
+        "Autumn": {
+          "CaravanSeason": 1.4,
+          "SpiceHarvest": 1.2
+        },
+        "Winter": {
+          "CraftActivity": 1.2,
+          "FestivalSeason": 1.3
+        }
+      }
+    }
+  ],
+  "TerrainTypes": {
+    "HighMountains": {
+      "Name": "高山岭脊区",
+      "Elevation": "800-2000m",
+      "Climate": "四季分明，冬雪夏凉",
+      "Resources": ["IronOre", "SilverOre", "HardWood"],
+      "Modifiers": {
+        "MineralQuality": 1.2,
+        "WoodHardness": 1.15,
+        "RarityBonus": 1,
+        "CultivationBonus": 0.1
+      }
+    },
+    "RiverValleys": {
+      "Name": "河谷水乡区",
+      "Elevation": "0-100m",
+      "Climate": "温润多雨，四季如春",
+      "Resources": ["Clay", "FreshwaterFish", "Bamboo"],
+      "Modifiers": {
+        "HerbEffect": 1.15,
+        "ClayQuality": 1.2,
+        "TradePrice": 1.1,
+        "CulturalBonus": 0.15
+      }
+    },
+    "RollingHills": {
+      "Name": "丘陵林地区",
+      "Elevation": "100-500m",
+      "Climate": "温和湿润，生态良好",
+      "Resources": ["Wood", "WildAnimals", "Herbs"],
+      "Modifiers": {
+        "WoodYield": 1.25,
+        "HuntingYield": 1.2,
+        "CraftSuccess": 1.15,
+        "SkillBonus": 0.1
+      }
+    },
+    "SaltLakes": {
+      "Name": "盐碱湖泊区",
+      "Elevation": "200-800m",
+      "Climate": "干燥少雨，蒸发量大",
+      "Resources": ["Salt", "Saltpeter", "AlkaliMinerals"],
+      "Modifiers": {
+        "SaltPurity": 1.3,
+        "SaltpeterQuality": 1.25,
+        "PreservationEffect": 1.2,
+        "FirearmBonus": 0.15
+      }
+    },
+    "Grasslands": {
+      "Name": "荒原草甸区",
+      "Elevation": "300-1000m",
+      "Climate": "干旱多风，季节性降雨",
+      "Resources": ["Livestock", "Grains", "Leather"],
+      "Modifiers": {
+        "LivestockQuality": 1.2,
+        "LeatherGrade": 1,
+        "DomesticationSuccess": 1.15,
+        "FreedomBonus": 0.1
+      }
+    },
+    "Wetlands": {
+      "Name": "沼泽湿地区",
+      "Elevation": "0-50m",
+      "Climate": "湿热多雾，瘴气弥漫",
+      "Resources": ["RareHerbs", "PoisonousPlants", "Reeds"],
+      "Modifiers": {
+        "HerbRarity": 1.3,
+        "DetoxEffect": 1.25,
+        "Concealment": 1.2,
+        "MysteryBonus": 0.15
+      }
+    }
+  }
+}

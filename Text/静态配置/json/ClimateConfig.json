@@ -1,0 +1,58 @@
+{
+  "Version": "1.0.0",
+  "LastModified": "2024-01-01T00:00:00Z",
+  "ClimateTypes": [
+    {
+      "ClimateID": "Temperate",
+      "Name": "温带气候",
+      "Description": "四季分明，温度适中，降水均匀",
+      "Temperature": {
+        "Spring": { "Min": 10, "Max": 20, "Average": 15 },
+        "Summer": { "Min": 20, "Max": 30, "Average": 25 },
+        "Autumn": { "Min": 10, "Max": 20, "Average": 15 },
+        "Winter": { "Min": -5, "Max": 10, "Average": 2 }
+      },
+      "Rainfall": {
+        "Spring": { "Min": 80, "Max": 150, "Average": 115 },
+        "Summer": { "Min": 100, "Max": 200, "Average": 150 },
+        "Autumn": { "Min": 60, "Max": 120, "Average": 90 },
+        "Winter": { "Min": 30, "Max": 80, "Average": 55 }
+      },
+      "Disasters": [
+        { "Type": "Flood", "Probability": 0.1, "Severity": "Medium" },
+        { "Type": "Drought", "Probability": 0.05, "Severity": "Low" }
+      ],
+      "CropModifiers": {
+        "Rice": 1.2,
+        "Wheat": 1.1,
+        "Vegetables": 1.0
+      }
+    },
+    {
+      "ClimateID": "Arid",
+      "Name": "干旱气候",
+      "Description": "降水稀少，昼夜温差大，植被稀疏",
+      "Temperature": {
+        "Spring": { "Min": 15, "Max": 25, "Average": 20 },
+        "Summer": { "Min": 25, "Max": 40, "Average": 32 },
+        "Autumn": { "Min": 15, "Max": 25, "Average": 20 },
+        "Winter": { "Min": 5, "Max": 15, "Average": 10 }
+      },
+      "Rainfall": {
+        "Spring": { "Min": 10, "Max": 30, "Average": 20 },
+        "Summer": { "Min": 5, "Max": 20, "Average": 12 },
+        "Autumn": { "Min": 10, "Max": 25, "Average": 17 },
+        "Winter": { "Min": 15, "Max": 40, "Average": 27 }
+      },
+      "Disasters": [
+        { "Type": "Drought", "Probability": 0.3, "Severity": "High" },
+        { "Type": "Sandstorm", "Probability": 0.2, "Severity": "Medium" }
+      ],
+      "CropModifiers": {
+        "DatePalm": 1.3,
+        "Barley": 0.8,
+        "Cotton": 0.6
+      }
+    }
+  ]
+}

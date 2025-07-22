@@ -1,0 +1,646 @@
+{
+  "Version": "1.0.0",
+  "LastModified": "2024-01-01T00:00:00Z",
+  "CoreRegions": [
+    {
+      "RegionID": "CentralPlains",
+      "Name": "中原农桑之地",
+      "DisplayName": "中原农桑之地",
+      "Description": "帝国的政治经济文化中心，肥沃的农业区域",
+      "RegionType": "Agricultural",
+      "GeographicFeatures": {
+        "TerrainTypes": [
+          {
+            "TerrainID": "FertilePlains",
+            "Name": "肥沃平原",
+            "Coverage": 0.6,
+            "Characteristics": {
+              "SoilQuality": "Excellent",
+              "Elevation": "Low",
+              "Drainage": "Good",
+              "Fertility": 0.95
+            },
+            "SuitableActivities": ["Agriculture", "Settlement", "Trade"]
+          },
+          {
+            "TerrainID": "RiceFields",
+            "Name": "稻田桑园",
+            "Coverage": 0.25,
+            "Characteristics": {
+              "WaterAccess": "Abundant",
+              "SoilType": "Clay",
+              "Irrigation": "Advanced",
+              "Productivity": 1.3
+            },
+            "SpecializedCrops": ["Rice", "Mulberry", "Lotus"]
+          },
+          {
+            "TerrainID": "RiverNetwork",
+            "Name": "河网密布",
+            "Coverage": 0.1,
+            "Characteristics": {
+              "WaterFlow": "Steady",
+              "NavigationSuitability": "High",
+              "FishingPotential": "Good",
+              "TransportationValue": "High"
+            }
+          },
+          {
+            "TerrainID": "BlackSoil",
+            "Name": "黑土肥沃",
+            "Coverage": 0.05,
+            "Characteristics": {
+              "OrganicContent": "VeryHigh",
+              "NutrientDensity": "Excellent",
+              "CropYieldBonus": 1.5,
+              "SoilDepth": "Deep"
+            }
+          }
+        ]
+      },
+      "ClimateCharacteristics": {
+        "ClimateType": "TemperateMonsoon",
+        "SeasonalPatterns": {
+          "Spring": {
+            "Temperature": {"Min": 10, "Max": 20, "Average": 15},
+            "Precipitation": 120,
+            "Humidity": 0.65,
+            "WindPattern": "Gentle",
+            "GrowingSeason": true
+          },
+          "Summer": {
+            "Temperature": {"Min": 20, "Max": 32, "Average": 26},
+            "Precipitation": 200,
+            "Humidity": 0.75,
+            "WindPattern": "Monsoon",
+            "GrowingSeason": true
+          },
+          "Autumn": {
+            "Temperature": {"Min": 8, "Max": 22, "Average": 15},
+            "Precipitation": 80,
+            "Humidity": 0.60,
+            "WindPattern": "Mild",
+            "HarvestSeason": true
+          },
+          "Winter": {
+            "Temperature": {"Min": -5, "Max": 8, "Average": 2},
+            "Precipitation": 40,
+            "Humidity": 0.55,
+            "WindPattern": "Cold",
+            "RestingSeason": true
+          }
+        },
+        "AnnualRainfall": 440,
+        "FrostFreeDays": 220,
+        "GrowingSeasonLength": 180
+      },
+      "StrategicValue": {
+        "EconomicImportance": "VeryHigh",
+        "PoliticalSignificance": "Capital",
+        "MilitaryValue": "Defensive",
+        "CulturalInfluence": "Dominant",
+        "Roles": [
+          {
+            "Role": "ImperialGranary",
+            "Description": "帝国粮仓",
+            "Contribution": "60% of total food production"
+          },
+          {
+            "Role": "PopulationCenter",
+            "Description": "人口稠密",
+            "PopulationDensity": "High",
+            "UrbanizationLevel": 0.4
+          },
+          {
+            "Role": "CulturalHub",
+            "Description": "文化中心",
+            "EducationalInstitutions": "Numerous",
+            "ArtisticTraditions": "Rich"
+          },
+          {
+            "Role": "PoliticalCore",
+            "Description": "政治核心",
+            "GovernmentSeat": true,
+            "AdministrativeCenter": true
+          }
+        ]
+      },
+      "CulturalCharacteristics": {
+        "DominantCulture": "Confucian",
+        "SocialStructure": "Hierarchical",
+        "CulturalTraits": [
+          {
+            "TraitID": "ConfucianEtiquette",
+            "Name": "儒家礼数",
+            "Description": "重视礼仪和社会秩序",
+            "SocialImpact": "High",
+            "Practices": ["Formal ceremonies", "Respect for elders", "Educational emphasis"]
+          },
+          {
+            "TraitID": "ClanGatherings",
+            "Name": "宗族聚会",
+            "Description": "家族血缘关系紧密",
+            "SocialCohesion": "Strong",
+            "Frequency": "Seasonal"
+          },
+          {
+            "TraitID": "PoetryGatherings",
+            "Name": "诗会雅集",
+            "Description": "文人墨客的聚会传统",
+            "CulturalRefinement": "High",
+            "IntellectualPursuit": true
+          },
+          {
+            "TraitID": "AgriculturalCivilization",
+            "Name": "农耕文明",
+            "Description": "以农业为基础的文明形态",
+            "EconomicFoundation": "Agriculture",
+            "LifestylePattern": "Settled"
+          }
+        ]
+      },
+      "SpecialResources": {
+        "AgriculturalResources": [
+          {
+            "ResourceID": "Rice",
+            "Name": "稻谷",
+            "Abundance": "VeryHigh",
+            "Quality": "Premium",
+            "YieldModifier": 1.3
+          },
+          {
+            "ResourceID": "GreenWheat",
+            "Name": "青麦",
+            "Abundance": "High",
+            "Quality": "Good",
+            "YieldModifier": 1.2
+          },
+          {
+            "ResourceID": "Silkworm",
+            "Name": "桑蚕",
+            "Abundance": "High",
+            "Quality": "Excellent",
+            "SpecialValue": "Silk production"
+          }
+        ],
+        "AquaticResources": [
+          {
+            "ResourceID": "FreshwaterFish",
+            "Name": "淡水鱼",
+            "Abundance": "High",
+            "Variety": "Diverse",
+            "SeasonalAvailability": "Year-round"
+          },
+          {
+            "ResourceID": "RiverCrab",
+            "Name": "河蟹",
+            "Abundance": "Medium",
+            "Quality": "Delicacy",
+            "SeasonalPeak": "Autumn"
+          },
+          {
+            "ResourceID": "LotusRoot",
+            "Name": "莲藕",
+            "Abundance": "Medium",
+            "Uses": ["Food", "Medicine"],
+            "CulturalSignificance": "High"
+          }
+        ],
+        "IndustrialMaterials": [
+          {
+            "ResourceID": "Clay",
+            "Name": "黏土",
+            "Abundance": "High",
+            "Quality": "Excellent",
+            "Applications": ["Pottery", "Construction"]
+          },
+          {
+            "ResourceID": "Bamboo",
+            "Name": "竹材",
+            "Abundance": "High",
+            "Quality": "Good",
+            "GrowthRate": "Fast"
+          },
+          {
+            "ResourceID": "Reed",
+            "Name": "芦苇",
+            "Abundance": "Medium",
+            "Uses": ["Paper", "Weaving", "Construction"]
+          }
+        ]
+      },
+      "InteractionMechanics": {
+        "RegionalChallenges": [
+          {
+            "ChallengeID": "FloodManagement",
+            "Name": "洪水管理",
+            "Description": "季节性洪水的防控",
+            "Frequency": "Annual",
+            "Impact": "High",
+            "RequiredResponse": "Infrastructure maintenance"
+          },
+          {
+            "ChallengeID": "DroughtMitigation",
+            "Name": "干旱缓解",
+            "Description": "干旱年份的应对措施",
+            "Frequency": "Periodic",
+            "Impact": "Medium",
+            "RequiredResponse": "Water conservation"
+          }
+        ],
+        "ManagementSystems": [
+          {
+            "SystemID": "AgriculturalManagement",
+            "Name": "农事管理",
+            "Description": "农业生产的组织和管理",
+            "Components": ["Crop rotation", "Irrigation scheduling", "Harvest coordination"]
+          },
+          {
+            "SystemID": "WaterConservancy",
+            "Name": "水利维护",
+            "Description": "水利设施的建设和维护",
+            "Components": ["Canal maintenance", "Dam construction", "Flood control"]
+          },
+          {
+            "SystemID": "DisasterResponse",
+            "Name": "抗灾决策",
+            "Description": "自然灾害的预防和应对",
+            "Components": ["Early warning", "Emergency reserves", "Recovery planning"]
+          }
+        ]
+      }
+    },
+    {
+      "RegionID": "SouthernJungle",
+      "Name": "南域丛林",
+      "DisplayName": "南域丛林",
+      "Description": "热带雨林地区，生物多样性丰富",
+      "RegionType": "Tropical",
+      "GeographicFeatures": {
+        "TerrainTypes": [
+          {
+            "TerrainID": "DenseRainforest",
+            "Name": "密林",
+            "Coverage": 0.7,
+            "Characteristics": {
+              "Biodiversity": "VeryHigh",
+              "Canopy": "Dense",
+              "Visibility": "Low",
+              "NavigationDifficulty": "High"
+            }
+          },
+          {
+            "TerrainID": "RiverValleys",
+            "Name": "河谷",
+            "Coverage": 0.2,
+            "Characteristics": {
+              "WaterAccess": "Abundant",
+              "SoilFertility": "High",
+              "SettlementSuitability": "Good"
+            }
+          },
+          {
+            "TerrainID": "Swamplands",
+            "Name": "沼泽",
+            "Coverage": 0.1,
+            "Characteristics": {
+              "WaterLevel": "High",
+              "AccessDifficulty": "VeryHigh",
+              "UniqueEcosystem": true
+            }
+          }
+        ]
+      },
+      "ClimateCharacteristics": {
+        "ClimateType": "TropicalRainforest",
+        "AnnualRainfall": 2500,
+        "Temperature": {"Min": 20, "Max": 35, "Average": 27},
+        "Humidity": 0.85,
+        "SeasonalVariation": "Minimal"
+      },
+      "SpecialResources": {
+        "ExoticPlants": [
+          {
+            "ResourceID": "RareMedicinalHerbs",
+            "Name": "珍稀药草",
+            "Rarity": "Epic",
+            "MedicinalValue": "VeryHigh"
+          },
+          {
+            "ResourceID": "TropicalFruits",
+            "Name": "热带水果",
+            "Abundance": "High",
+            "Variety": "Diverse"
+          }
+        ],
+        "ExoticAnimals": [
+          {
+            "ResourceID": "TropicalBirds",
+            "Name": "热带鸟类",
+            "Abundance": "High",
+            "SpecialValue": "Feathers and songs"
+          }
+        ]
+      }
+    },
+    {
+      "RegionID": "WesternDesert",
+      "Name": "西域沙漠",
+      "DisplayName": "西域沙漠",
+      "Description": "干旱的沙漠地区，贸易路线要冲",
+      "RegionType": "Desert",
+      "GeographicFeatures": {
+        "TerrainTypes": [
+          {
+            "TerrainID": "SandDunes",
+            "Name": "沙丘",
+            "Coverage": 0.6,
+            "Characteristics": {
+              "WaterScarcity": "Extreme",
+              "TemperatureVariation": "High",
+              "NavigationDifficulty": "High"
+            }
+          },
+          {
+            "TerrainID": "Oases",
+            "Name": "绿洲",
+            "Coverage": 0.05,
+            "Characteristics": {
+              "WaterAccess": "Reliable",
+              "Vegetation": "Lush",
+              "SettlementHub": true,
+              "TradeImportance": "Critical"
+            }
+          },
+          {
+            "TerrainID": "RockyOutcrops",
+            "Name": "岩石露头",
+            "Coverage": 0.35,
+            "Characteristics": {
+              "MineralDeposits": "Present",
+              "Shelter": "Available",
+              "WaterCollection": "Possible"
+            }
+          }
+        ]
+      },
+      "ClimateCharacteristics": {
+        "ClimateType": "AridDesert",
+        "AnnualRainfall": 50,
+        "Temperature": {
+          "DayMax": 45,
+          "NightMin": 5,
+          "Average": 25
+        },
+        "Humidity": 0.2,
+        "WindPattern": "Strong and frequent sandstorms"
+      },
+      "SpecialResources": {
+        "MineralResources": [
+          {
+            "ResourceID": "PreciousGems",
+            "Name": "宝石",
+            "Rarity": "Rare",
+            "TradeValue": "VeryHigh"
+          },
+          {
+            "ResourceID": "RareMetals",
+            "Name": "稀有金属",
+            "Abundance": "Medium",
+            "MiningDifficulty": "High"
+          }
+        ],
+        "TradeGoods": [
+          {
+            "ResourceID": "Spices",
+            "Name": "香料",
+            "TradeValue": "High",
+            "PreservationQuality": "Excellent"
+          }
+        ]
+      }
+    },
+    {
+      "RegionID": "NorthernSteppe",
+      "Name": "北域草原",
+      "DisplayName": "北域草原",
+      "Description": "广阔的草原地带，游牧民族聚居地",
+      "RegionType": "Grassland",
+      "GeographicFeatures": {
+        "TerrainTypes": [
+          {
+            "TerrainID": "OpenGrassland",
+            "Name": "开阔草原",
+            "Coverage": 0.8,
+            "Characteristics": {
+              "GrassQuality": "High",
+              "LivestockCapacity": "VeryHigh",
+              "Visibility": "Excellent",
+              "MobilityAdvantage": "High"
+            }
+          },
+          {
+            "TerrainID": "RollingHills",
+            "Name": "起伏丘陵",
+            "Coverage": 0.2,
+            "Characteristics": {
+              "StrategicValue": "High",
+              "WaterSources": "Present",
+              "DefensiveAdvantage": "Good"
+            }
+          }
+        ]
+      },
+      "ClimateCharacteristics": {
+        "ClimateType": "ContinentalSteppe",
+        "AnnualRainfall": 300,
+        "Temperature": {
+          "SummerMax": 30,
+          "WinterMin": -20,
+          "Average": 5
+        },
+        "SeasonalVariation": "Extreme",
+        "WindPattern": "Strong prevailing winds"
+      },
+      "SpecialResources": {
+        "LivestockResources": [
+          {
+            "ResourceID": "Horses",
+            "Name": "马匹",
+            "Quality": "Excellent",
+            "MilitaryValue": "VeryHigh"
+          },
+          {
+            "ResourceID": "Cattle",
+            "Name": "牛群",
+            "Abundance": "High",
+            "ProductionValue": "High"
+          },
+          {
+            "ResourceID": "Sheep",
+            "Name": "羊群",
+            "Abundance": "VeryHigh",
+            "WoolQuality": "Excellent"
+          }
+        ]
+      }
+    },
+    {
+      "RegionID": "EasternIslands",
+      "Name": "东域岛屿",
+      "DisplayName": "东域岛屿",
+      "Description": "海洋中的岛屿群，海洋文明发达",
+      "RegionType": "Maritime",
+      "GeographicFeatures": {
+        "TerrainTypes": [
+          {
+            "TerrainID": "CoastalPlains",
+            "Name": "沿海平原",
+            "Coverage": 0.4,
+            "Characteristics": {
+              "SoilFertility": "Good",
+              "SeaAccess": "Direct",
+              "FishingPotential": "High"
+            }
+          },
+          {
+            "TerrainID": "VolcanicHills",
+            "Name": "火山丘陵",
+            "Coverage": 0.3,
+            "Characteristics": {
+              "SoilFertility": "VeryHigh",
+              "MineralDeposits": "Rich",
+              "GeothermalActivity": "Present"
+            }
+          },
+          {
+            "TerrainID": "NaturalHarbors",
+            "Name": "天然港湾",
+            "Coverage": 0.3,
+            "Characteristics": {
+              "ShippingAdvantage": "Excellent",
+              "TradeHub": true,
+              "NavalBase": "Suitable"
+            }
+          }
+        ]
+      },
+      "ClimateCharacteristics": {
+        "ClimateType": "MaritimeTemperate",
+        "AnnualRainfall": 1200,
+        "Temperature": {"Min": 8, "Max": 28, "Average": 18},
+        "Humidity": 0.75,
+        "SeasonalStability": "High"
+      },
+      "SpecialResources": {
+        "MarineResources": [
+          {
+            "ResourceID": "SeaFish",
+            "Name": "海鱼",
+            "Abundance": "VeryHigh",
+            "Variety": "Extensive"
+          },
+          {
+            "ResourceID": "Pearls",
+            "Name": "珍珠",
+            "Rarity": "Rare",
+            "LuxuryValue": "VeryHigh"
+          },
+          {
+            "ResourceID": "Seaweed",
+            "Name": "海藻",
+            "Abundance": "High",
+            "Uses": ["Food", "Medicine", "Fertilizer"]
+          }
+        ],
+        "VolcanicResources": [
+          {
+            "ResourceID": "VolcanicGlass",
+            "Name": "火山玻璃",
+            "Quality": "Excellent",
+            "ToolMaking": "Superior"
+          }
+        ]
+      }
+    }
+  ],
+  "RegionalInteractions": {
+    "TradeRoutes": [
+      {
+        "RouteID": "CentralToWestern",
+        "Name": "中西贸易路线",
+        "ConnectedRegions": ["CentralPlains", "WesternDesert"],
+        "PrimaryGoods": ["Grain", "Silk", "Spices", "Gems"],
+        "TravelTime": 45,
+        "Difficulty": "Medium",
+        "SeasonalAccessibility": {
+          "Spring": "Good",
+          "Summer": "Excellent",
+          "Autumn": "Good",
+          "Winter": "Difficult"
+        }
+      },
+      {
+        "RouteID": "EasternMaritime",
+        "Name": "东域海路",
+        "ConnectedRegions": ["EasternIslands", "CentralPlains"],
+        "PrimaryGoods": ["Fish", "Pearls", "Grain", "Crafts"],
+        "TravelTime": 20,
+        "TransportMethod": "Naval"
+      }
+    ],
+    "CulturalExchange": {
+      "LanguageInfluence": {
+        "CentralPlains": "Dominant",
+        "RegionalDialects": "Preserved",
+        "TradeLinguaFranca": "Central Plains dialect"
+      },
+      "TechnologicalDiffusion": {
+        "AgriculturalTechniques": "Central to all regions",
+        "MaritimeTechnology": "Eastern to coastal regions",
+        "AnimalHusbandry": "Northern to all regions"
+      }
+    },
+    "PoliticalRelations": {
+      "TributarySystem": {
+        "CentralAuthority": "CentralPlains",
+        "TributaryRegions": ["SouthernJungle", "WesternDesert", "NorthernSteppe", "EasternIslands"],
+        "TributeFrequency": "Annual",
+        "TributeTypes": ["Resources", "Crafts", "Manpower"]
+      }
+    }
+  },
+  "EnvironmentalSystems": {
+    "WeatherPatterns": {
+      "GlobalEvents": [
+        {
+          "EventID": "MonsoonSeason",
+          "Name": "季风季节",
+          "AffectedRegions": ["CentralPlains", "SouthernJungle"],
+          "Duration": 90,
+          "Effects": {
+            "Precipitation": 2.0,
+            "CropGrowth": 1.3,
+            "FloodRisk": 0.3
+          }
+        },
+        {
+          "EventID": "WinterStorms",
+          "Name": "冬季风暴",
+          "AffectedRegions": ["NorthernSteppe"],
+          "Duration": 120,
+          "Effects": {
+            "Temperature": -10,
+            "LivestockMortality": 0.1,
+            "TravelDifficulty": 2.0
+          }
+        }
+      ]
+    },
+    "EcologicalBalance": {
+      "BiodiversityHotspots": ["SouthernJungle", "EasternIslands"],
+      "ConservationPriorities": ["Rare medicinal plants", "Unique marine ecosystems"],
+      "EnvironmentalThreats": ["Deforestation", "Overfishing", "Desertification"]
+    }
+  }
+}
